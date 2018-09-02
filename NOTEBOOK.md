@@ -13,6 +13,7 @@
 * worked to gain familiarity with github
 * added yaml file and notebook to cloudmesh
 * setup linux vm
+* tested branching and pulls
 
 
 *TODO 
