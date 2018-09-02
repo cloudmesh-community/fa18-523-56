@@ -11,6 +11,7 @@
 * Read through EPUB text book up to section 4.4 and watched many of the videos
 * joined cloudmesh-community from email invite
 * worked to gain familiarity with github
+* setup linux vm
 
 *TODO 
-Take Plagarism Certification Test, Setup VM - Linux
+Take Plagarism Certification Test
