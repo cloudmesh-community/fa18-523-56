@@ -20,4 +20,4 @@
 
 *TODO 
 Take Plagarism Certification Test
-Practice Python (took on-ramp class
+Practice Python (took on-ramp class fall 2017 but needs refresh)
