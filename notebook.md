@@ -14,7 +14,10 @@
 * added yaml file and notebook to cloudmesh
 * setup linux vm
 * tested branching and pulls
+* installed python
+* installed PyCharm 
 
 
 *TODO 
 Take Plagarism Certification Test
+Practice Python (took on-ramp class
