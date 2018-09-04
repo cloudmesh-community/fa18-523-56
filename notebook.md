@@ -19,4 +19,4 @@
 
 
 *TODO 
-Take Plagarism Certification Test, Practice Python (took on-ramp class fall 2017 but needs refresh), Find a Linux system that you have root access to and experiment with Linux. Review Python as you will likely use this for the project. See: https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md, futuresystems account
+Take Plagarism Certification Test, Practice Python (took on-ramp class fall 2017 but needs refresh), Find a Linux system that you have root access to and experiment with Linux. Review Python as you will likely use this for the project. See: https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md, futuresystems account, get epub reader that will pull the raw from git
