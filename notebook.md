@@ -28,5 +28,7 @@ Practice Python (took on-ramp class fall 2017 but needs refresh), Find a Linux s
 q Project kickoff: picking an idea scope and scale of the project - coding involved
 q :hand: fa18-523-56 for tech doc updates 
 
+Google Kubernetes	Jena	Rocks	Gitreceive	NiFi (NSA)	Protobuf
+
 download http://www.jabref.org/
 
