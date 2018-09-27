@@ -29,7 +29,7 @@
 * Used JabRef to build citations
 * Reading
 
-# Week Fri 09/11/18 - 09/28/18
+# Week Fri 09/21/18 - 09/28/18
 
 * Draft tech doc edit: Google Kubernetes
 * Draft tech doc edits: Jena
