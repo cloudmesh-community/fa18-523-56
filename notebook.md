@@ -44,6 +44,8 @@
 
 # Week Fri 10/05/18 - 10/11/18
 
+* reviewing 1.8 Example Artifacts 
+
 
 use your hid directory and put the content in 
 
