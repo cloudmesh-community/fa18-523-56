@@ -44,6 +44,18 @@
 
 # Week Fri 10/05/18 - 10/11/18
 
+
+use your hid directory and put the content in 
+
+
+project-report/report.md
+
+project-report/report.bib
+
+project-report/iamges/sample.png
+
+project-code/   your code comes here
+
 SSH key?? Practice Python (took on-ramp class fall 2017 but needs refresh), Find a Linux system that you have root access to and experiment with Linux. Review Python as you will likely use this for the project. See: https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md, get epub reader that will pull the raw from git
 
 q Project kickoff: picking an idea scope and scale of the project - coding involved
