@@ -29,12 +29,20 @@
 * Used JabRef to build citations
 * Reading
 
-# Week Fri 09/21/18 - 09/28/18
+# Week Fri 09/21/18 - 09/27/18
 
 * Draft tech doc edit: Google Kubernetes
 * Draft tech doc edits: Jena
 * Draft tech doc edits: NIFI
 * Reading
+
+# Week Fri 09/28/18 - 10/04/18
+
+* TA feedback on tech doc: Google Kubernetes
+* research for project
+* Reading
+
+# Week Fri 10/05/18 - 10/11/18
 
 SSH key?? Practice Python (took on-ramp class fall 2017 but needs refresh), Find a Linux system that you have root access to and experiment with Linux. Review Python as you will likely use this for the project. See: https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md, https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md, get epub reader that will pull the raw from git
 
