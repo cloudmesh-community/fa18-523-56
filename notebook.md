@@ -53,3 +53,14 @@ Google Kubernetes	Jena	Rocks	Gitreceive	NiFi (NSA)	Protobuf
 
 download http://www.jabref.org/
 409 project good
+naperville, ill
+
+marijuana vs high powered drugs
+
+income level and crime correlation 
+
+datebase 
+
+sql JaveScripting 
+
+review of Mongo vs MarkLogic 
