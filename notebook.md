@@ -1,12 +1,12 @@
  Progress Notes for I523-E534 : Big Data Applications and Big Data Applications Analytics
-# Week 08/20/18 - 08/31/18
+### Week 08/20/18 - 08/31/18
 * requested access to canvas 
 * reviewed course material and the reading for the first week
 * researched IEEE Bio 
 * wrote a Bio for  and posted it to Piazza
 * setup GIThub account and wrote up notes of class progress
 
-# Week Fri 08/31/18 - 09/06/18
+### Week Fri 08/31/18 - 09/06/18
 
 * Read through EPUB text book up to section 4.4 and watched many of the videos
 * joined cloudmesh-community from email invite
@@ -17,44 +17,45 @@
 * installed python
 * installed PyCharm 
 
-# Week Fri 09/07/18 - 09/13/18
+### Week Fri 09/07/18 - 09/13/18
 
 * Took Plagarism Certification Test
 * setup future systems account
 * downloaded edge to read epub book
 
-# Week Fri 09/14/18 - 09/20/18
+### Week Fri 09/14/18 - 09/20/18
 
 * Draft tech doc edit: Google Kubernetes
 * Used JabRef to build citations
 * Reading
 
-# Week Fri 09/21/18 - 09/27/18
+### Week Fri 09/21/18 - 09/27/18
 
 * Draft tech doc edit: Google Kubernetes
 * Draft tech doc edits: Jena
 * Draft tech doc edits: NIFI
 * Reading
 
-# Week Fri 09/28/18 - 10/04/18
+### Week Fri 09/28/18 - 10/04/18
 
 * TA feedback on tech doc: Google Kubernetes
 * research for project
 * Reading
 
-# Week Fri 10/05/18 - 10/11/18
+### Week Fri 10/05/18 - 10/11/18
 
 * reviewing 1.8 Example Artifacts 
 * edits to tech docs
 * wrote some of paper
 * figuring out project
 
-# Week Fri 10/12/18 - 10/19/18
+### Week Fri 10/12/18 - 10/19/18
 * fix https://github.com/cloudmesh/technologies/blob/master/chapters/tech/google-kubernetes.md
 
 
-use your hid directory and put the content in 
+# WORK SPACE AND NOTES
 
+use your hid directory and put the content in 
 
 project-report/report.md
 
