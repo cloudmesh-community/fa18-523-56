@@ -45,6 +45,12 @@
 # Week Fri 10/05/18 - 10/11/18
 
 * reviewing 1.8 Example Artifacts 
+* edits to tech docs
+* wrote some of paper
+* figuring out project
+
+# Week Fri 10/12/18 - 10/19/18
+* fix https://github.com/cloudmesh/technologies/blob/master/chapters/tech/google-kubernetes.md
 
 
 use your hid directory and put the content in 
