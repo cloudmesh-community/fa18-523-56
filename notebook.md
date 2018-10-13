@@ -1,4 +1,4 @@
- Progress Notes for I523-E534 : Big Data Applications and Big Data Applications Analytics
+ # Progress Notes for I523-E534 : Big Data Applications and Big Data Applications Analytics
 ### Week 08/20/18 - 08/31/18
 * requested access to canvas 
 * reviewed course material and the reading for the first week
