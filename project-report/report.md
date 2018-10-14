@@ -17,6 +17,36 @@ Keywords: ETL, Data Stream, NIFI, NSA,
 
 ---
 
+*: Potential Structure:*
+
+## Introduction
+
+## Prerequisites
+
+### Install NIFI
+
+### Connected to Data Source
+
+## Flowfiles
+
+## Processors
+
+### Setup Routing Processors
+
+### Setup Data Transformation Processors
+
+### Setup Database Access Processors
+
+### Setup System Integration Processors
+
+### AWS Processors
+
+
+
+
+
+*: Project Structure from piazza:*
+
 ## Abstract
 
 TBD
