@@ -5,16 +5,14 @@ Big data can be fantastic source of truth for decision making and business proce
 ETL or Extract, Transform, and Load encompass a number of potential tasks such as harvesting and moving data into a database from some other location and/or and cleaning, normalizing or even structuring data. In a case where a single dataset emerges from an ETL process and the data is somewhat structured and located somewhere predictably accessible, then we can start to leverage analytic or visualization tools to understand the data and use it to make decisions and learn things. Furthermore, productization and dissemination of that data is fairly straightforward.
 
 But this is rarely where the real use case for bigdata solutions ends. The bigger challenge is dealing with disparate datasets and connecting points of information in a multi-sourced dataset environment. Consolidation of disparate data is therefore extremely important. Furthermore leveraging the the correctly sourced data out of consolidated datastore environment and then loaded this data into the correct product is challenging. 
-With this in mind NIFI 
-With this challenge in view we sought to take a real world case and leverage very different datasets and find a way to leverage  the  leverage Apache NIFI and Mongo DB to see 
+
+NIFI is an application that seeks to address this big data problem is tool that has emerged from a unique background as tool created by the National Secuirty Agency curated and improved by the open source community.
+NIFI is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NIFI provides the ability to build or alter an ETL flow with a few clicks. NIFI builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow. [@fa18-523-56- www-nifi-issartetlsimple] This flexibility and usability is key to NIFIs value in a big data world where stovepipes and inflexibility are frequently challenges. 
 
 ## ELT Challenges and NIFI 
 
 In the world of big data ETL, or Extract Transform and Load, is a prevalent in most big date projects or architecture. If the data being used is in the perfect format and structure, and the data is housed or collected in the ideal location for the end use of the data, then ETL may be superfluous. Otherwise Extract Transform and Load concepts will come into play. However, enabling ETL is frequently more difficult than it sounds. Data moving between systems effectively is tricky to setup and challenging to refactor on the fly when conditions change. Enter Apache NIFI. 
 
-## What is NIFI
-
-NIFI is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NIFI provides the ability to build or alter an ETL flow with a few clicks. NIFI builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow. [@fa18-523-56- www-nifi-issartetlsimple] This flexibility and usability is key to NIFIs value in a big data world where stovepipes and inflexibility are frequently challenges. 
 
 ## NIFI history
 
