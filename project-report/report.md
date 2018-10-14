@@ -45,7 +45,7 @@ Keywords: ETL, Data Stream, NIFI, NSA,
 
 
 
-*: Project Structure from piazza:*
+*:Project Structure from piazza:*
 
 ## Abstract
 
