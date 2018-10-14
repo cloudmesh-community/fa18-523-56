@@ -1,10 +1,3 @@
-Working on getting the snapshot in place by 10/14
-
-Chapter on NIFI
-
-
-Good example: <https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md>
-
 # NIFI Chapter :hand: fa18-523-56
 
 | Daniel Hinders
@@ -14,7 +7,10 @@ Good example: <https://github.com/cloudmesh-community/book/blob/master/chapters/
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-code/code)
 
+**:mortar_board: Learning Objectives**
 
+* Learn about NIFI
+* Install NIFI and setup a new data stream
 ---
 
 Keywords: ETL, Data Stream, NIFI, NSA, 
