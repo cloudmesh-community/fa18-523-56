@@ -10,7 +10,7 @@
 **:mortar_board: Learning Objectives**
 
 * Learn about NIFI
-* Install NIFI and setup a new data stream
+* Install NIFI and setup a data stream with various processors
 ---
 
 Keywords: ETL, Data Stream, NIFI, NSA, 
@@ -20,6 +20,8 @@ Keywords: ETL, Data Stream, NIFI, NSA,
 *: Potential Structure:*
 
 ## Introduction
+
+## NIFI History
 
 ## Prerequisites
 
@@ -41,6 +43,11 @@ Keywords: ETL, Data Stream, NIFI, NSA,
 
 ### AWS Processors
 
+## NIFI Advantages
+
+## NIFI Disadvantages 
+
+## Alternatives to NIFI
 
 
 
