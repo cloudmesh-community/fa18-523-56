@@ -17,7 +17,7 @@ Keywords: ETL, Data Stream, NIFI, NSA,
 
 ---
 
-*: Potential Structure:*
+: Potential Structure:
 
 ## Introduction
 
