@@ -1,5 +1,23 @@
-# Apache NIFI
+# Apache NIFI :hand: fa18-523-56
 
+| Daniel Hinders
+| dhinders@iu.edu
+| Indiana University
+| hid: fa18-523-56
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.md)
+
+
+---
+
+Keywords: NIFI, NSA, Data Stream, ETL
+
+---
+
+## Abstract
+
+TBD
+
+## Introduction
 
 Big data can be fantastic source of truth for decision making and business process definition and actualization. However, the complexity of individual datasets, the variability of dataset structure and composition, and the sheer volume of data are challenges to truly leveraging big data in the real world. This is a multifaceted problem with many inherently overlapping challenges. 
 ETL or Extract, Transform, and Load encompass a number of potential tasks such as harvesting and moving data into a database from some other location and/or and cleaning, normalizing or even structuring data. In a case where a single dataset emerges from an ETL process and the data is somewhat structured and located somewhere predictably accessible, then we can start to leverage analytic or visualization tools to understand the data and use it to make decisions and learn things. Furthermore, productization and dissemination of that data is fairly straightforward.
@@ -22,16 +40,28 @@ NIFI was first developed at the National Security Agency but was released as ope
 
 NIFI incorporates a straightforward UI to engineer traceable data provence with configurable components. NIFI offers up the ability to custom build processors and incorporate them into a highly customizable flows. Through “…data routing, transformation, and system mediation logic” [@fa18-523-56-www-nifi-nifihomepage] NIFI seeks to automate data flows in a big data environment and give architects the ability to keep data flowing between evolving systems quickly. Amongst a host of features NIFI offers, one sticks out as particularly important because of the challenges associated with what the feature addresses: data errors, data inconsistency, and data irregularity handling. NIFI provides users the ability to incorporate in the flow processes to catch these non-happy path realities in big data. As new situations are discovered a user can quickly build if-then forks in the process to catch, store, or resolve the data issues.
 
+## Requirements
 
+## Design 
+
+## Architecture
+
+## Dataset
+
+## Implementation
+
+## Benchmark
+
+## Conclusion
+
+## Acknowledgement
+
+
+## Notes (not inlcuded)
 Theory
 Implementation (e.g. Python)
-Benchmark
- 
-
+Benchmark 
 A more detailed outline is 
-
-
-
 Paper
 Title
 Abstract
