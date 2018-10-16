@@ -58,6 +58,8 @@ NIFI incorporates a straightforward UI to engineer traceable data provence with 
 
 
 ## Notes (not inlcuded)
+Batch vs Live stream (Live) 
+
 Theory
 Implementation (e.g. Python)
 Benchmark 
