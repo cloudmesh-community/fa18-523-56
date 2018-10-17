@@ -54,6 +54,7 @@ Scalability: supports scale-out by clustering architecture as well as scale-up a
 
 
 ## Architecture
+https://hortonworks.com/tutorial/analyze-transit-patterns-with-apache-nifi/section/1/
 ### Connector
 ### Flow Files
 ### Processors
