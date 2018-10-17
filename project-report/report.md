@@ -44,8 +44,12 @@ Keywords: ETL, Data Stream, NIFI, NSA,
 ### AWS Processors
 
 ## What is NIFI good for
+### source to analytic platform
+### 
 
 ## What is NIFI not good for
+### multiple dataset joins
+### not good for aggregation  
 
 
 ## Alternatives to NIFI
