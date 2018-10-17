@@ -43,9 +43,10 @@ Keywords: ETL, Data Stream, NIFI, NSA,
 
 ### AWS Processors
 
-## NIFI Advantages
+## What is NIFI good for
 
-## NIFI Disadvantages 
+## What is NIFI not good for
+
 
 ## Alternatives to NIFI
 
