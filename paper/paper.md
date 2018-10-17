@@ -40,9 +40,18 @@ NIFI was first developed at the National Security Agency but was released as ope
 
 NIFI incorporates a straightforward UI to engineer traceable data provence with configurable components. NIFI offers up the ability to custom build processors and incorporate them into a highly customizable flows. Through “…data routing, transformation, and system mediation logic” [@fa18-523-56-www-nifi-nifihomepage] NIFI seeks to automate data flows in a big data environment and give architects the ability to keep data flowing between evolving systems quickly. Amongst a host of features NIFI offers, one sticks out as particularly important because of the challenges associated with what the feature addresses: data errors, data inconsistency, and data irregularity handling. NIFI provides users the ability to incorporate in the flow processes to catch these non-happy path realities in big data. As new situations are discovered a user can quickly build if-then forks in the process to catch, store, or resolve the data issues.
 
-## Requirements
 
-## Design 
+
+NiFi's main features are:
+
+Guaranteed delivery: use purpose-built persistent write-ahead log and content repository to ensure guaranteed delivery in an effective way
+Web-based user interface: easy to use web-based GUI with drag and drop features that allows users to build, schedule, control, and monitor dataflow
+Provenance: provide ability to track data flows through the systems with audit trail and traceability functionalities
+Queue Prioritization: provide the ability to configure and prioritize job flow and determine the order of events
+Secure: provide and support multiple security protocols and encryptions, as well as authorization management
+Extensibility: provide flexibility by allowing pre-built and built-your-own extension the be integrated
+Scalability: supports scale-out by clustering architecture as well as scale-up and scale-down [@fa18-523-83-nifi-apache][@fa18-523-83-apache-nifi-overview]
+
 
 ## Architecture
 ### Connector
@@ -52,7 +61,15 @@ NIFI incorporates a straightforward UI to engineer traceable data provence with 
 ### Data Transformation Processors
 ### Database Access Processors
 ### Setup System Integration Processors
+
+
 ## Use Case
+What it is good for and what it is not
+### Predictive Analytics
+### Fraud Detection
+### Accelerated Data Collection
+### IoT Optimization
+### Big Data Ingest - Hadoop Integration
 
 ## Conclusion
 
