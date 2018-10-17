@@ -45,17 +45,18 @@ NIFI incorporates a straightforward UI to engineer traceable data provence with 
 ## Design 
 
 ## Architecture
-
-## Dataset
-
-## Implementation
-
-## Benchmark
+### Connector
+### Flow Files
+### Processors
+### Routing Processors
+### Data Transformation Processors
+### Database Access Processors
+### Setup System Integration Processors
+## Use Case
 
 ## Conclusion
 
 ## Acknowledgement
-
 
 ## Notes (not inlcuded)
 Batch vs Live stream (Live) 
