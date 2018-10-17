@@ -1,9 +1,9 @@
 # NIFI Chapter :hand: fa18-523-56
 
-| Daniel Hinders
+| Daniel Hinders, Nhi Tran
 | dhinders@iu.edu
 | Indiana University
-| hid: fa18-523-56
+| hid: fa18-523-56, fa18-523-83
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-code/code)
 
@@ -15,9 +15,6 @@
 
 Keywords: ETL, Data Stream, NIFI, NSA, 
 
----
-
-*Chapter Structure*
 
 ## Introduction
 
