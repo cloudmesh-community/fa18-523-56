@@ -50,7 +50,15 @@
 * figuring out project
 
 ### Week Fri 10/12/18 - 10/19/18
+
 * fix https://github.com/cloudmesh/technologies/blob/master/chapters/tech/google-kubernetes.md
+* worked on paper - Apache NIFI
+
+### Week Fri 10/20/18 - 10/26/18
+
+* Working on paper - Apache NIFI
+* Working on project
+
 
 
 # WORK SPACE AND NOTES
