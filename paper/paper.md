@@ -32,7 +32,7 @@ NiFi is a customizable tool for building flexible data flows while preserving da
 In the world of big data ETL, or Extract Transform and Load, is a prevalent in most big date projects or architecture. If the data being used is in the perfect format and structure, and the data is housed or collected in the ideal location for the end use of the data, then ETL may be superfluous. Otherwise Extract Transform and Load concepts will come into play. However, enabling ETL is frequently more difficult than it sounds. Data moving between systems effectively is tricky to setup and challenging to refactor on the fly when conditions change. Enter Apache NiFi.
  
  
-## NiFi history
+## NiFi History
  
 NiFi was first developed at the National Security Agency but was released as open source project to the public. "NiFi was submitted to The Apache Software Foundation (ASF) in November 2014 as part of the NSA Technology Transfer Program." [@fa18-523-56-www-nifi-forbes] Since then, Apache Foundation has used it’s volunteer organization to grow and mature the project. [@fa18-523-56-www-nifi-issartetlsimple]
  
@@ -54,6 +54,40 @@ Scalability: supports scale-out by clustering architecture as well as scale-up a
  
  
 ## Architecture
+
+### NiFi Architecture Overview
+
+* Web Server
+* Flow Controller
+* FlowFile Repository
+* Content Repository
+* Provenance Repository
+* Java Virtual Machine
+
+From the top down NiFi is web browser accessable by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow.
+
+### Web Server
+
+NiFi easy to use GUI is hosted on the Web Server within the JVM
+
+
+### Flow Controller
+
+NiFi central operations hub is the Flow Controller. Treads are managed and allocated to the processesors and the FlowFiles are passed through and maged through the Flow Controller. [@fa18-523-56-www-nifi-hortontransitpatterns]
+
+### FlowFile Repository
+
+Files in an active NiFi flow are tracked in a write ahead log so that as data moved through the flow NiFi can keep track of what is known about files as they pass through.[@fa18-523-56-www-nifi-homepagetechdoc]
+
+### Content Repository
+
+The real data for a flow file is in the NiFi content repository. NiFi uses simple blocks of data in a file system to store this FlowFile data. [@fa18-523-56-www-nifi-homepagetechdoc] Multiple file systems can be used in order to increase speed with multiple volumes being utilized. 
+
+### Provenance Repository
+
+### JVM
+
+
 https://hortonworks.com/tutorial/analyze-transit-patterns-with-apache-nifi/section/1/
 ### Connector
 ### Flow Files
@@ -86,7 +120,7 @@ MasterCard provided a demo which demonstrate the use case of them using NiFi to 
  
 ## Notes (not inlcuded)
 
-I think we need to move any citations over to https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.bib
+I think we need to move any citations over to https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.bib ??
 Batch vs Live stream (Live)
  
 Theory
