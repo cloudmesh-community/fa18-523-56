@@ -64,7 +64,7 @@ Scalability: supports scale-out by clustering architecture as well as scale-up a
 * Provenance Repository
 * Java Virtual Machine
 
-From the top down NiFi is web browser accessable by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow.
+From the top down NiFi is web browser accessable by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow. NiFi is hosted in the Java Virtual Machine environment or JVM. 
 
 ### Web Server
 
@@ -86,8 +86,6 @@ The real data for a flow file is in the NiFi content repository. NiFi uses simpl
 ### Provenance Repository
 
 In NiFi the provenance repository stores historic event data. The provenance data about flows is indexed to enable search of the records.
-
-### JVM
 
 
 https://hortonworks.com/tutorial/analyze-transit-patterns-with-apache-nifi/section/1/
