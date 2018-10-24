@@ -85,6 +85,8 @@ The real data for a flow file is in the NiFi content repository. NiFi uses simpl
 
 ### Provenance Repository
 
+In NiFi the provenance repository stores historic event data. The provenance data about flows is indexed to enable search of the records.
+
 ### JVM
 
 
