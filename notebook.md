@@ -63,6 +63,8 @@
 
 # WORK SPACE AND NOTES
 
+author, title, published date if can't find it put accessed date, 
+
 use your hid directory and put the content in 
 
 project-report/report.md
