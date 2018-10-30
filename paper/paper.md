@@ -100,19 +100,30 @@ https://hortonworks.com/tutorial/analyze-transit-patterns-with-apache-nifi/secti
  
 ## Use Case
 What it is good for and what it is not
-https://dataworkssummit.com/san-jose-2018/session/using-nifi-to-simplify-data-flow-streaming-use-cases-mastercard/
-https://www.marklogic.com/blog/apache-nifi-ingest-relational-data-to-marklogic/
-http://bigdatausecases.info/technologies/nifi
-https://blogs.opentext.com/streaming-analytics-with-opentext-magellan/
-https://dzone.com/articles/tensorflow-and-nifi-big-data-ai-sandwich
-### File Transfer
-One of the use case for NiFi at MasterCard is file transfer mechanism. Batch processing is still a major part of MasterCard's ecosystem which requires multiple formatted flat files being created, transfered, and picked up by applications. MasterCard uses NiFi's file transfer features to convert files source into data stream and perform specific workflow to direct data into various target systems. Target system could be a messaging systems, Hadoop landing zone, databases. NiFi can also feeds data and trigger a map-reduce or spark jobs after transfer.
-MasterCard provided a demo which demonstrate the use case of them using NiFi to call a web services from a file transfer controller, the data flow then has a mechanism to determine which process groups NiFi should distribute data into based on file name/ format logic. The process groups contains workflow that can either feeds data to a diffrerent system, to Hadoop, or to Postgres database. Once each process flow are completed, the process status will be captured and reported into a Status Handler process. 
-### Predictive Analytics
-### Fraud Detection
-### Accelerated Data Collection
-### IoT Optimization
-### Big Data Ingest - Hadoop Integration
+https://www.udemy.com/apache-nifi/
+
+### File Transfer and Routing at MasterCard
+
+One of the use cases for NiFi at MasterCard is file transfer mechanism. Batch processing is still a major part of MasterCard's ecosystem which requires multiple formatted flat files being created, transfered, and picked up by applications. MasterCard uses NiFi's file transfer features to convert files source into data stream and perform specific workflow to direct data into various target systems. Target system could be a messaging systems, Hadoop landing zone, databases. NiFi can also feeds data and trigger a map-reduce or spark jobs after transfer [https://dataworkssummit.com/san-jose-2018/session/using-nifi-to-simplify-data-flow-streaming-use-cases-mastercard/
+].
+
+MasterCard provided a demo which demonstrate the use case of them using NiFi to call a web services from a file transfer controller, the data flow then has a mechanism to determine which process groups NiFi should distribute data into based on file name/ format logic. The process groups contains workflow that can either feeds data to a diffrerent system, to Hadoop, or to Postgres database. Once each process flow are completed, the process status will be captured and reported into a Status Handler process [https://dataworkssummit.com/san-jose-2018/session/using-nifi-to-simplify-data-flow-streaming-use-cases-mastercard/]. 
+
+
+### Streaming Analytics Solutions at OpenText Magellan
+
+At OpenText Magellan, NiFi was utilized as part of their streaming analytics infrastrusture to allow continuous process and real-time analysis. OpenText Magellan's infrastructure involves source applications, NiFi, Apacha Spark, Python, R, Scala, and other Magellan BI and Reporting tools. A typical process of streaming analytics process involves five steps: Data Acquisition, Data Routing, Streaming Processing, Machine Learning, Prediction Results, and Actionable Insights [https://blogs.opentext.com/streaming-analytics-with-opentext-magellan/].
+
+NiFi is used during the first Data Acquisition steps to collect data from multiple sources such as smart devices, social media, online transactions, and log monitoring. The real-time data can then be combined with other historical data or other data sources before being feed into downstream system [https://blogs.opentext.com/streaming-analytics-with-opentext-magellan/]. Data is then being streamed by Kafka in Data Routing step and then being read and applied business rules by Spark Streaming API before it is being store in data lake. Spark Streaming API will apply machine learning prediction model in Machine Learning step and then being saved in Prediction Results. One the result is created, organizations can take quick decisions to provide business benefits and insights.
+
+As a result, Mallegan was able to create a low cost solutions that has the flexibility and extensibility of open source software. 
+
+### Real Time Streaming at Xenonstack
+https://www.xenonstack.com/blog/big-data-engineering/real-time-streaming-apache-spark-nifi-and-kafka/
+
+### Social Competitive Intelligence Application at Compose
+Compose is an IBM company launched in 2010 that offer databases as a service on the cloud that are production ready and are easy to manage. NiFi in being used in Compose as part of their Competitive Intelligence infrastructure that involves other software such as Twitter, IBM Watson, Redis, and MongoDB. NiFi was used to extract filtered Twitter Stream data and attributes and send tweet data to IBM Watson for Sentiment analysis, as well as updating Redis for dashboards and reporting purpose and at the same time store all data in MongoDB [http://mybbt.bbtconsulting.com:8069/slides/slide/a-real-use-case-with-nifi-the-swiss-army-knife-of-data-flow-121] . 
+
  
 ## Conclusion
  
