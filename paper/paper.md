@@ -92,6 +92,12 @@ https://hortonworks.com/tutorial/analyze-transit-patterns-with-apache-nifi/secti
 ### Connector
 ### Flow Files
 ### Processors
+
+NiFi provides more than 260 processors and more than 48 contrller services for users to integrate into a flow from the graphic user interface of Nifi.
+
+
+[@fa18-523-56-www-nifi-creatingprocessors]
+
 ### Routing Processors
 ### Data Transformation Processors
 ### Database Access Processors
