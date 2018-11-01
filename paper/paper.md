@@ -25,7 +25,7 @@ ETL or Extract, Transform, and Load encompass a number of potential tasks such a
 But this is rarely where the real use case for bigdata solutions ends. The bigger challenge is dealing with disparate datasets and connecting points of information in a multi-sourced dataset environment. Consolidation of disparate data is therefore extremely important. Furthermore leveraging the the correctly sourced data out of consolidated datastore environment and then loaded this data into the correct product is challenging.
  
 Apache NiFi is an application that seeks to address this big data problem. NiFi is tool that has emerged from a unique background as tool created by the National Secuirty Agency then curated and improved by the open source community.
-NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow. [@fa18-523-56- www-nifi-issartetlsimple] This flexibility and usability is key to NIFIs value in a big data world where stovepipes and inflexibility are frequently challenges.
+NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NIFIs value in a big data world where stovepipes and inflexibility are frequently challenges.
  
 ## ELT Challenges and NiFi
  
@@ -62,7 +62,7 @@ NiFi's main features are:
 * FlowFile Repository
 * Content Repository
 * Provenance Repository
-* Java Virtual Machine
+
 
 From the top down NiFi is web browser accessable by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow. NiFi is hosted in the Java Virtual Machine environment or JVM. 
 
@@ -73,30 +73,34 @@ NiFi easy to use GUI is hosted on the Web Server within the JVM
 
 ### Flow Controller
 
-NiFi central operations hub is the Flow Controller. Treads are managed and allocated to the processesors and the FlowFiles are passed through and maged through the Flow Controller. [@fa18-523-56-www-nifi-hortontransitpatterns]
+NiFi central operations hub is the Flow Controller. Treads are managed and allocated to the processesors and the FlowFiles are passed through and maged through the Flow Controller [@fa18-523-56-www-nifi-hortontransitpatterns].
 
 ### FlowFile Repository
 
-Files in an active NiFi flow are tracked in a write ahead log so that as data moved through the flow NiFi can keep track of what is known about files as they pass through.[@fa18-523-56-www-nifi-homepagetechdoc]
+Files in an active NiFi flow are tracked in a write ahead log so that as data moved through the flow NiFi can keep track of what is known about files as they pass through[@fa18-523-56-www-nifi-homepagetechdoc].
 
 ### Content Repository
 
-The real data for a flow file is in the NiFi content repository. NiFi uses simple blocks of data in a file system to store this FlowFile data. [@fa18-523-56-www-nifi-homepagetechdoc] Multiple file systems can be used in order to increase speed with multiple volumes being utilized. 
+The real data for a flow file is in the NiFi content repository. NiFi uses simple blocks of data in a file system to store this FlowFile data [@fa18-523-56-www-nifi-homepagetechdoc]. Multiple file systems can be used in order to increase speed with multiple volumes being utilized. 
 
 ### Provenance Repository
 
-In NiFi the provenance repository stores historic event data. The provenance data about flows is indexed to enable search of the records.
+In NiFi the provenance repository stores historic event data. The provenance data about flows is indexed to enable search of the records[@fa18-523-56-www-nifi-hortontransitpatterns].
 
 
-https://hortonworks.com/tutorial/analyze-transit-patterns-with-apache-nifi/section/1/
-### Connector
-### Flow Files
+
+
 ### Processors
 
-NiFi provides more than 260 processors and more than 48 contrller services for users to integrate into a flow from the graphic user interface of Nifi.
+NiFi provides more than 260 processors and more than 48 contrller services for users to integrate into a flow from the graphic user interface of Nifi[@fa18-523-56-www-nifi-creatingprocessors]. Processors are base on underlying controller services in the jave virtual machine. Controller services can be centered around a security implmentation, database CRUD (create read updates and deletes), and many other fondational areas. Users can create custom processors from existing controller servicies or create a customer controller service as well[@fa18-523-56-www-nifi-creatingprocessors].
 
+### Processor Examples
 
-[@fa18-523-56-www-nifi-creatingprocessors]
+A simple NiFi flow might start off with a Get. Nifi provides dozens of Get processor options. GetFTP, GetMongo, GetTCP, etc. 
+
+### Connector
+### Flow Files
+
 
 ### Routing Processors
 ### Data Transformation Processors
