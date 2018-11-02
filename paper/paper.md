@@ -13,12 +13,6 @@ Keywords: NiFi, NSA, Data Stream, ETL
  
 ---
  
-## Abstract
- 
-* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
-* https://piazza.com/class/jl6rxey6w413gi?cid=89
-* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
-* https://piazza.com/class/jl6rxey6w413gi?cid=250
 ## Introduction
  
 Big data can be fantastic source of truth for decision making and business 
@@ -168,16 +162,19 @@ Ford is an automobiles manufacturing company in the United States. Being a large
 
 Ford's data are being sourced from Open XC which contains vehicle and phone application data into a private cloud via Cloud Foundry Websocket or Event Hub. Data from Websocket are streamed via Kafka into a cloud-based NiFi cluster together with the Event Hub data. From the cloud-based NiFi Cluster, the combined data then flows to a private in-house NiFi cluster in Ford's data center and then publish to Kafka for downstream system distributions or being stored in Hadoop [@www-fa18-523-83-ford-nifi].
 
-
-## Conclusion
  
-## Acknowledgement
 
 ## work breakdown section (required via piazza)
 ---
  
 ## Notes (not inlcuded)
 
+## Abstract
+ 
+* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
+* https://piazza.com/class/jl6rxey6w413gi?cid=89
+* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
+* https://piazza.com/class/jl6rxey6w413gi?cid=250
 I think we need to move any citations over to https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.bib ??
 Batch vs Live stream (Live)
  
