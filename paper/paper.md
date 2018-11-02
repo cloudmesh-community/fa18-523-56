@@ -37,7 +37,7 @@ of that data is fairly straightforward.
  
 But this is rarely where the real use case for bigdata solutions ends. The bigger challenge is dealing with disparate datasets and connecting points of information in a multi-sourced dataset environment. Consolidation of disparate data is therefore extremely important. Furthermore leveraging the the correctly sourced data out of consolidated datastore environment and then loaded this data into the correct product is challenging.
  
-Apache NiFi is an application that seeks to address this big data problem. NiFi is tool that has emerged from a unique background as tool created by the National Secuirty Agency then curated and improved by the open source community.
+Apache NiFi is an application that seeks to address this big data problem. NiFi is tool that has emerged from a unique background as tool created by the National Security Agency then curated and improved by the open source community.
 NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NIFIs value in a big data world where stovepipes and inflexibility are frequently challenges.
  
 ## ELT Challenges and NiFi
@@ -77,7 +77,7 @@ NiFi's main features are:
 * Provenance Repository
 
 
-From the top down NiFi is web browser accessable by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow. NiFi is hosted in the Java Virtual Machine environment or JVM. 
+From the top down NiFi is web browser accessible by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow. NiFi is hosted in the Java Virtual Machine environment or JVM. 
 
 ### Web Server
 
@@ -86,7 +86,7 @@ NiFi easy to use GUI is hosted on the Web Server within the JVM
 
 ### Flow Controller
 
-NiFi central operations hub is the Flow Controller. Treads are managed and allocated to the processesors and the FlowFiles are passed through and maged through the Flow Controller [@fa18-523-56-www-nifi-hortontransitpatterns].
+NiFi central operations hub is the Flow Controller. Treads are managed and allocated to the processors and the FlowFiles are passed through and managed through the Flow Controller [@fa18-523-56-www-nifi-hortontransitpatterns].
 
 ### FlowFile Repository
 
@@ -103,13 +103,13 @@ In NiFi the provenance repository stores historic event data. The provenance dat
 
 ### Processors
 
-NiFi provides more than 260 processors and more than 48 contrller services for users to integrate into a flow from the graphic user interface of Nifi[@fa18-523-56-www-nifi-creatingprocessors]. Processors are base on underlying controller services in the jave virtual machine. Controller services can be centered around a security implmentation, database CRUD (create read updates and deletes), and many other fondational areas. Users can create custom processors from existing controller servicies or create a customer controller service as well[@fa18-523-56-www-nifi-creatingprocessors].
+NiFi provides more than 260 processors and more than 48 controller services for users to integrate into a flow from the graphic user interface of Nifi[@fa18-523-56-www-nifi-creatingprocessors]. Processors are base on underlying controller services in the java virtual machine. Controller services can be centered around a security implementation, database CRUD (create read updates and deletes), and many other foundational areas. Users can create custom processors from existing controller services or create a customer controller service as well[@fa18-523-56-www-nifi-creatingprocessors].
 
 ### Processor Examples
 **Get** 
  * Examples: GetFTP, GetMongo, GetTCP etc [@fa18-523-56-www-nifi-homepagetechdoc].
- * Similar input type prosessors: Consume, Extract, Fetch, Listen etc.
-Nifi provides dozens of Get processor options many other similar intput type processors.  A Get processer is commonly used to pick up a file or  data and launch a FlowFile. The Get file processer setup typically give configuration options to point to a host, set timing increments for polling and timeouts, set proxy settings, and more[@fa18-523-56-www-nifi-homepagetechdoc].
+ * Similar input type processors: Consume, Extract, Fetch, Listen etc.
+Nifi provides dozens of Get processor options many other similar input type processors.  A Get processer is commonly used to pick up a file or data and launch a FlowFile. The Get file processer setup typically give configuration options to point to a host, set timing increments for polling and timeouts, set proxy settings, and more[@fa18-523-56-www-nifi-homepagetechdoc].
 
 
 
@@ -123,6 +123,7 @@ Once data is in the flow NiFi provides dozens of processors to manipulate or tra
 * Examples: PutFile, PutFTP, PutSQL, PutElasticSearch, PutAzureBlobStorage,etc [@fa18-523-56-www-nifi-homepagetechdoc].
 * Similar output type processors: Publish. 
 
+A critical part of a flow in NiFi is pushing the right data out of the flow into the right spot. There are dozens of Put processors that can be configured to set the directory to write files too. Additional configuration options are specific to the destination type to include SSL configuration, cache options, batching options, and many other configuration options based on the destination type [@fa18-523-56-www-nifi-homepagetechdoc].
 
 
 ### Connector
@@ -133,7 +134,7 @@ Once data is in the flow NiFi provides dozens of processors to manipulate or tra
 
 NiFi is a tool for:
 * Moving data between systems, including modern systems such as social media sources, AWS cloud server, Hadoop, MongoDB, and so on
-* Delivering data to analytics platiforms
+* Delivering data to analytics platforms
 * Format Conversion, extracting/parsing data
 * Data or files routing decisions
 * Real-time data streaming
