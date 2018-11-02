@@ -15,9 +15,10 @@ Keywords: NiFi, NSA, Data Stream, ETL
  
 ## Abstract
  
-https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
-https://piazza.com/class/jl6rxey6w413gi?cid=89
- https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
+* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
+* https://piazza.com/class/jl6rxey6w413gi?cid=89
+* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
+* https://piazza.com/class/jl6rxey6w413gi?cid=250
 ## Introduction
  
 Big data can be fantastic source of truth for decision making and business 
