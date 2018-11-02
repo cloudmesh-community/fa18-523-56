@@ -15,7 +15,7 @@ Keywords: NiFi, NSA, Data Stream, ETL
  
 ## Abstract
  
-TBD
+https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
  
 ## Introduction
  
