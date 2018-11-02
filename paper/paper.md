@@ -124,10 +124,6 @@ Once data is in the flow NiFi provides dozens of processors to manipulate or tra
 * Similar output type processors: Publish. 
 
 A critical part of a flow in NiFi is pushing the right data out of the flow into the right spot. There are dozens of Put processors that can be configured to set the directory to write files too. Additional configuration options are specific to the destination type to include SSL configuration, cache options, batching options, and many other configuration options based on the destination type [@fa18-523-56-www-nifi-homepagetechdoc].
-
-
-### Connector
-
  
  
 ## Use Case
