@@ -19,8 +19,19 @@ TBD
  
 ## Introduction
  
-Big data can be fantastic source of truth for decision making and business process definition and actualization. However, the complexity of individual datasets, the variability of dataset structure and composition, and the sheer volume of data are challenges to truly leveraging big data in the real world. This is a multifaceted problem with many inherently overlapping challenges.
-ETL or Extract, Transform, and Load encompass a number of potential tasks such as harvesting and moving data into a database from some other location and/or and cleaning, normalizing or even structuring data. In a case where a single dataset emerges from an ETL process and the data is somewhat structured and located somewhere predictably accessible, then we can start to leverage analytic or visualization tools to understand the data and use it to make decisions and learn things. Furthermore, productization and dissemination of that data is fairly straightforward.
+Big data can be fantastic source of truth for decision making and business 
+process definition and actualization. However, the complexity of individual 
+datasets, the variability of dataset structure and composition, and the sheer 
+volume of data are challenges to truly leveraging big data in the real world. 
+This is a multifaceted problem with many inherently overlapping challenges.
+ETL or Extract, Transform, and Load encompass a number of potential tasks such
+as harvesting and moving data into a database from some other location and/or
+and cleaning, normalizing or even structuring data. In a case where a single 
+dataset emerges from an ETL process and the data is somewhat structured and 
+located somewhere predictably accessible, then we can start to leverage 
+analytic or visualization tools to understand the data and use it to make 
+decisions and learn things. Furthermore, productization and dissemination 
+of that data is fairly straightforward.
  
 But this is rarely where the real use case for bigdata solutions ends. The bigger challenge is dealing with disparate datasets and connecting points of information in a multi-sourced dataset environment. Consolidation of disparate data is therefore extremely important. Furthermore leveraging the the correctly sourced data out of consolidated datastore environment and then loaded this data into the correct product is challenging.
  
