@@ -89,17 +89,24 @@ In NiFi the provenance repository stores historic event data. The provenance dat
 
 
 
-
-
 ### Processors
 
 NiFi provides more than 260 processors and more than 48 contrller services for users to integrate into a flow from the graphic user interface of Nifi[@fa18-523-56-www-nifi-creatingprocessors]. Processors are base on underlying controller services in the jave virtual machine. Controller services can be centered around a security implmentation, database CRUD (create read updates and deletes), and many other fondational areas. Users can create custom processors from existing controller servicies or create a customer controller service as well[@fa18-523-56-www-nifi-creatingprocessors].
 
 ### Processor Examples
+* Get [@fa18-523-56-www-nifi-homepagetechdoc].
+ - Examples: GetFTP, GetMongo, GetTCP 
+ - Similar input type prosessors: Consume, Extract, Fetch, Listen etc.
+Nifi provides dozens of Get processor options many other similar intput type processors.  A Get processer is commonly used to pick up a file or  data and launch a FlowFile. The Get file processer setup typically give configuration options to point to a host, set timing increments for polling and timeouts, set proxy settings, and more[@fa18-523-56-www-nifi-homepagetechdoc].. 
 
-A simple NiFi flow might start off with a Get. Nifi provides dozens of Get processor options. GetFTP, GetMongo, GetTCP, etc. [@fa18-523-56-www-nifi-homepagetechdoc].
 
-A Get processer is commonly used to pick up a file or some data and launch a FlowFile. The Get file processer setup typically points to a host and 
+
+* Convert [@fa18-523-56-www-nifi-homepagetechdoc].
+- Examples: ConvertJSONToSQL, Convert Record, ConvertExceltoCSVProcessor, etc.
+- Similar input type processors: Evaluate, Merge, Split, etc 
+
+Once data is in the flow NiFi provides dozens of processors   [@fa18-523-56-www-nifi-homepagetechdoc].
+
 
 ### Connector
 ### Flow Files
