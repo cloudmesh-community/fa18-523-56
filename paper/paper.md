@@ -60,9 +60,9 @@ NiFi's main features are:
 * Scalability: supports scale-out by clustering architecture as well as scale-up and scale-down [@www-nifi] [@www-fa18-523-83-apache-nifi-overview]
  
  
-## Architecture
+## NiFi Architecture
 
-### NiFi Architecture Overview
+### Architecture Overview
 
 * Web Server
 * Flow Controller
