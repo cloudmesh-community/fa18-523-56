@@ -88,35 +88,32 @@ The real data for a flow file is in the NiFi content repository. NiFi uses simpl
 In NiFi the provenance repository stores historic event data. The provenance data about flows is indexed to enable search of the records[@fa18-523-56-www-nifi-hortontransitpatterns].
 
 
-
 ### Processors
 
 NiFi provides more than 260 processors and more than 48 contrller services for users to integrate into a flow from the graphic user interface of Nifi[@fa18-523-56-www-nifi-creatingprocessors]. Processors are base on underlying controller services in the jave virtual machine. Controller services can be centered around a security implmentation, database CRUD (create read updates and deletes), and many other fondational areas. Users can create custom processors from existing controller servicies or create a customer controller service as well[@fa18-523-56-www-nifi-creatingprocessors].
 
 ### Processor Examples
-**Get** [@fa18-523-56-www-nifi-homepagetechdoc].
- * Examples: GetFTP, GetMongo, GetTCP 
+**Get** 
+ * Examples: GetFTP, GetMongo, GetTCP etc [@fa18-523-56-www-nifi-homepagetechdoc].
  * Similar input type prosessors: Consume, Extract, Fetch, Listen etc.
-Nifi provides dozens of Get processor options many other similar intput type processors.  A Get processer is commonly used to pick up a file or  data and launch a FlowFile. The Get file processer setup typically give configuration options to point to a host, set timing increments for polling and timeouts, set proxy settings, and more[@fa18-523-56-www-nifi-homepagetechdoc].. 
+Nifi provides dozens of Get processor options many other similar intput type processors.  A Get processer is commonly used to pick up a file or  data and launch a FlowFile. The Get file processer setup typically give configuration options to point to a host, set timing increments for polling and timeouts, set proxy settings, and more[@fa18-523-56-www-nifi-homepagetechdoc].
 
 
 
-**Convert** [@fa18-523-56-www-nifi-homepagetechdoc].
-* Examples: ConvertJSONToSQL, Convert Record, ConvertExceltoCSVProcessor, etc.
-* Similar input type processors: Evaluate, Merge, Split, etc 
+**Convert** 
+* Examples: ConvertJSONToSQL, Convert Record, ConvertExceltoCSVProcessor, etc[@fa18-523-56-www-nifi-homepagetechdoc].
+* Similar transformation type processors: Evaluate, Merge, Split, etc 
 
-Once data is in the flow NiFi provides dozens of processors   [@fa18-523-56-www-nifi-homepagetechdoc].
+Once data is in the flow NiFi provides dozens of processors to manipulate or transform data. The convert processors can be configured to the expected schema or type from the Get processor and tranform, edit, thin, enrich or many other functions on the data in the flow    [@fa18-523-56-www-nifi-homepagetechdoc].
 
 **Put**
+* Examples: PutFile, PutFTP, PutSQL, PutElasticSearch, PutAzureBlobStorage,etc [@fa18-523-56-www-nifi-homepagetechdoc].
+* Similar output type processors: Publish. 
+
+
 
 ### Connector
-### Flow Files
 
-
-### Routing Processors
-### Data Transformation Processors
-### Database Access Processors
-### Setup System Integration Processors
  
  
 ## Use Case
