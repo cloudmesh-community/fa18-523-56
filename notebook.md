@@ -60,6 +60,12 @@
 * Working on project
 
 
+### Week Fri 10/27/18 - 11/02/18
+
+* Working on paper - Apache NIFI
+* Updating tech docs with feedback from prof and TAs
+
+### Week Fri 11/03/18 - 11/09/18
 
 # WORK SPACE AND NOTES
 
