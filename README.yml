@@ -4,6 +4,7 @@ owner:
   lastname: "Hinders"
   hid: "fa18-523-56"
   community: "e534"
+  profile: "<https://github.com/danhinders>"
   semester: fa18
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/google-kubernetes.md
