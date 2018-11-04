@@ -169,13 +169,15 @@ Ford's data are being sourced from Open XC which contains vehicle and phone appl
  
 ## Notes (not inlcuded)
 
-## Abstract
+:o: citations must be in bitex
  
 * https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
 * https://piazza.com/class/jl6rxey6w413gi?cid=89
 * https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
 * https://piazza.com/class/jl6rxey6w413gi?cid=250
+
 I think we need to move any citations over to https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.bib ??
+
 Batch vs Live stream (Live)
  
 Theory
