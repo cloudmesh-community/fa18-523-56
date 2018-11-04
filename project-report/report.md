@@ -1,9 +1,9 @@
 # NIFI Chapter :hand: fa18-523-56
 
-| Daniel Hinders, Nhi Tran
+| Daniel Hinders
 | dhinders@iu.edu
 | Indiana University
-| hid: fa18-523-56, fa18-523-83
+| hid: fa18-523-56
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-code/code)
 
