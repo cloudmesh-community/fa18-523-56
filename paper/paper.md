@@ -1,9 +1,9 @@
-# Apache NiFi :hand: fa18-523-56  fa18-523-83
+# Apache NiFi :hand: fa18-523-56  fa18-523-56
  
 | Daniel Hinders , Nhi Tran
 | dhinders@iu.edu, nytran@iu.edu
 | Indiana University
-| hid: fa18-523-56 , fa18-523-83
+| hid: fa18-523-56 , fa18-523-56
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.md)
  
  
@@ -12,9 +12,7 @@
 Keywords: NiFi, NSA, Data Stream, ETL
  
 ---
- 
-## Introduction
- 
+
 Big data can be fantastic source of truth for decision making and business 
 process definition and actualization. However, the complexity of individual 
 datasets, the variability of dataset structure and composition, and the sheer 
@@ -57,7 +55,7 @@ NiFi's main features are:
 * Queue Prioritization: provide the ability to configure and prioritize job flow and determine the order of events
 * Secure: provide and support multiple security protocols and encryptions, as well as authorization management
 * Extensibility: provide flexibility by allowing pre-built and built-your-own extension the be integrated
-* Scalability: supports scale-out by clustering architecture as well as scale-up and scale-down [@www-nifi] [@www-fa18-523-83-apache-nifi-overview]
+* Scalability: supports scale-out by clustering architecture as well as scale-up and scale-down [@www-nifi] [@fa18-523-56-www-nifi-homepagetechdoc]
  
  
 ## NiFi Architecture
@@ -134,33 +132,33 @@ NiFi is not recommended for:
 * Distributed Computation
 * Complex Event Processing
 * Join/ Aggregated Functions
-[@www-fa18-523-83-udemy-nifi]
+[@www-fa18-523-56-udemy-nifi]
 
 ### File Transfer and Routing at MasterCard
 
-MasterCard is a card payment and technology company that connects digital transactions globally. One of the use cases for NiFi at MasterCard is file transfer mechanism. Batch processing is still a major part of MasterCard's ecosystem which requires multiple formatted flat files being created, transfered, and picked up by applications. MasterCard uses NiFi's file transfer features to convert files source into data stream and perform specific workflow to direct data into various target systems. Target system could be a messaging systems, Hadoop landing zone, databases. NiFi can also feeds data and trigger a map-reduce or spark jobs after transfer [@www-fa18-523-83-nifi-mastercard].
+MasterCard is a card payment and technology company that connects digital transactions globally. One of the use cases for NiFi at MasterCard is file transfer mechanism. Batch processing is still a major part of MasterCard's ecosystem which requires multiple formatted flat files being created, transfered, and picked up by applications. MasterCard uses NiFi's file transfer features to convert files source into data stream and perform specific workflow to direct data into various target systems. Target system could be a messaging systems, Hadoop landing zone, databases. NiFi can also feeds data and trigger a map-reduce or spark jobs after transfer [@www-fa18-523-56-nifi-mastercard].
 
-MasterCard provided a demo which demonstrate the use case of them using NiFi to call a web services from a file transfer controller, the data flow then has a mechanism to determine which process groups NiFi should distribute data into based on file name/ format logic. The process groups contains workflow that can either feeds data to a diffrerent system, to Hadoop, or to Postgres database. Once each process flow are completed, the process status will be captured and reported into a Status Handler process [@www-fa18-523-83-nifi-mastercard]. 
+MasterCard provided a demo which demonstrate the use case of them using NiFi to call a web services from a file transfer controller, the data flow then has a mechanism to determine which process groups NiFi should distribute data into based on file name/ format logic. The process groups contains workflow that can either feeds data to a diffrerent system, to Hadoop, or to Postgres database. Once each process flow are completed, the process status will be captured and reported into a Status Handler process [@www-fa18-523-56-nifi-mastercard]. 
 
 
 ### Streaming Analytics Solutions at OpenText Magellan
 
-OpenText Magellan is an artifical intelligence product that supports machine learning and advance analytics. At OpenText Magellan organization, NiFi was utilized as part of their streaming analytics infrastrusture to allow continuous process and real-time analysis. OpenText Magellan's infrastructure involves source applications, NiFi, Apacha Spark, Python, R, Scala, and other Magellan BI and Reporting tools. A typical process of streaming analytics process involves five steps: Data Acquisition, Data Routing, Streaming Processing, Machine Learning, Prediction Results, and Actionable Insights [@www-fa18-523-83-opentext-magellan-nifi].
+OpenText Magellan is an artifical intelligence product that supports machine learning and advance analytics. At OpenText Magellan organization, NiFi was utilized as part of their streaming analytics infrastrusture to allow continuous process and real-time analysis. OpenText Magellan's infrastructure involves source applications, NiFi, Apacha Spark, Python, R, Scala, and other Magellan BI and Reporting tools. A typical process of streaming analytics process involves five steps: Data Acquisition, Data Routing, Streaming Processing, Machine Learning, Prediction Results, and Actionable Insights [@www-fa18-523-56-opentext-magellan-nifi].
 
-NiFi is used during the first Data Acquisition steps to collect data from multiple sources such as smart devices, social media, online transactions, and log monitoring. The real-time data can then be combined with other historical data or other data sources before being feed into downstream system [@www-fa18-523-83-opentext-magellan-nifi]. Data is then being streamed by Kafka in Data Routing step and then being read and applied business rules by Spark Streaming API before it is being store in data lake. Spark Streaming API will apply machine learning prediction model in Machine Learning step and then being saved in Prediction Results. One the result is created, organizations can take quick decisions to provide business benefits and insights.
+NiFi is used during the first Data Acquisition steps to collect data from multiple sources such as smart devices, social media, online transactions, and log monitoring. The real-time data can then be combined with other historical data or other data sources before being feed into downstream system [@www-fa18-523-56-opentext-magellan-nifi]. Data is then being streamed by Kafka in Data Routing step and then being read and applied business rules by Spark Streaming API before it is being store in data lake. Spark Streaming API will apply machine learning prediction model in Machine Learning step and then being saved in Prediction Results. One the result is created, organizations can take quick decisions to provide business benefits and insights.
 
 As a result, the organization was able to create a low cost solutions that has the flexibility and extensibility of open source software. 
 
 
 ### Social Competitive Intelligence Application at Compose
 
-Compose is an IBM company launched in 2010 that offer databases as a service on the cloud that are production ready and are easy to manage. NiFi in being used in Compose as part of their Competitive Intelligence infrastructure that involves other software such as Twitter, IBM Watson, Redis, and MongoDB. NiFi was used to extract filtered Twitter Stream data and attributes and send tweet data to IBM Watson for Sentiment analysis, as well as updating Redis for dashboards and reporting purpose and at the same time store all data in MongoDB [@www-fa18-523-83-compose-nifi] . 
+Compose is an IBM company launched in 2010 that offer databases as a service on the cloud that are production ready and are easy to manage. NiFi in being used in Compose as part of their Competitive Intelligence infrastructure that involves other software such as Twitter, IBM Watson, Redis, and MongoDB. NiFi was used to extract filtered Twitter Stream data and attributes and send tweet data to IBM Watson for Sentiment analysis, as well as updating Redis for dashboards and reporting purpose and at the same time store all data in MongoDB [@www-fa18-523-56-compose-nifi] . 
 
 ### Real Time Streaming Architecture at Ford
 
-Ford is an automobiles manufacturing company in the United States. Being a large company, data are stored and generated constantly in many applications within the enterprise such as assembly plants data, vehicle sensor data, dealership data, vehicle dianogstic data, and so on. Ford came up with a solution called Real Time Streaming Architecture (RTSA) to allow data being flow between systems in real-time with proper data governance [@www-fa18-523-83-ford-nifi].
+Ford is an automobiles manufacturing company in the United States. Being a large company, data are stored and generated constantly in many applications within the enterprise such as assembly plants data, vehicle sensor data, dealership data, vehicle dianogstic data, and so on. Ford came up with a solution called Real Time Streaming Architecture (RTSA) to allow data being flow between systems in real-time with proper data governance [@www-fa18-523-56-ford-nifi].
 
-Ford's data are being sourced from Open XC which contains vehicle and phone application data into a private cloud via Cloud Foundry Websocket or Event Hub. Data from Websocket are streamed via Kafka into a cloud-based NiFi cluster together with the Event Hub data. From the cloud-based NiFi Cluster, the combined data then flows to a private in-house NiFi cluster in Ford's data center and then publish to Kafka for downstream system distributions or being stored in Hadoop [@www-fa18-523-83-ford-nifi].
+Ford's data are being sourced from Open XC which contains vehicle and phone application data into a private cloud via Cloud Foundry Websocket or Event Hub. Data from Websocket are streamed via Kafka into a cloud-based NiFi cluster together with the Event Hub data. From the cloud-based NiFi Cluster, the combined data then flows to a private in-house NiFi cluster in Ford's data center and then publish to Kafka for downstream system distributions or being stored in Hadoop [@www-fa18-523-56-ford-nifi].
  
 
 ## work breakdown section (required via piazza)
