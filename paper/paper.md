@@ -161,10 +161,10 @@ Compose is an IBM company launched in 2010 that offer databases as a service on 
 Ford is an automobiles manufacturing company in the United States. Being a large company, data are stored and generated constantly in many applications within the enterprise such as assembly plants data, vehicle sensor data, dealership data, vehicle dianogstic data, and so on. Ford came up with a solution called Real Time Streaming Architecture (RTSA) to allow data being flow between systems in real-time with proper data governance [@www-fa18-523-83-ford-nifi].
 
 Ford's data are being sourced from Open XC which contains vehicle and phone application data into a private cloud via Cloud Foundry Websocket or Event Hub. Data from Websocket are streamed via Kafka into a cloud-based NiFi cluster together with the Event Hub data. From the cloud-based NiFi Cluster, the combined data then flows to a private in-house NiFi cluster in Ford's data center and then publish to Kafka for downstream system distributions or being stored in Hadoop [@www-fa18-523-83-ford-nifi].
-
  
 
 ## work breakdown section (required via piazza)
+
 ---
  
 ## Notes (not inlcuded)
