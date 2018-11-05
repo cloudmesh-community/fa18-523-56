@@ -1,9 +1,9 @@
-# Apache NiFi :hand: fa18-523-56  fa18-523-56
+# Apache NiFi :hand: fa18-523-56  fa18-523-83
  
 | Daniel Hinders , Nhi Tran
 | dhinders@iu.edu, nytran@iu.edu
 | Indiana University
-| hid: fa18-523-56 , fa18-523-56
+| hid: fa18-523-56 , fa18-523-83
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.md)
  
  
@@ -156,9 +156,18 @@ Ford is an automobiles manufacturing company in the United States. Being a large
 Ford's data are being sourced from Open XC which contains vehicle and phone application data into a private cloud via Cloud Foundry Websocket or Event Hub. Data from Websocket are streamed via Kafka into a cloud-based NiFi cluster together with the Event Hub data. From the cloud-based NiFi Cluster, the combined data then flows to a private in-house NiFi cluster in Ford's data center and then publish to Kafka for downstream system distributions or being stored in Hadoop [@www-fa18-523-56-ford-nifi].
  
 
-## work breakdown section (required via piazza)
+## work breakdown
 
----
+* Nhi Tran fa18-523-83
+Use Case
+
+* Daniel Hinders fa18-523-56
+Big Data Challanges and NiFi
+NiFi History
+NiFi Architecture
+
+* Both
+NiFi Features
  
 ## Notes (not inlcuded)
 
