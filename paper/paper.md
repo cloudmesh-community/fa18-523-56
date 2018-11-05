@@ -13,6 +13,8 @@ Keywords: NiFi, NSA, Data Stream, ETL
  
 ---
 
+## Big Data Challanges and NiFi  
+
 Big data can be fantastic source of truth for decision making and business 
 process definition and actualization. However, the complexity of individual 
 datasets, the variability of dataset structure and composition, and the sheer 
@@ -30,12 +32,7 @@ of that data is fairly straightforward.
 But this is rarely where the real use case for bigdata solutions ends. The bigger challenge is dealing with disparate datasets and connecting points of information in a multi-sourced dataset environment. Consolidation of disparate data is therefore extremely important. Furthermore leveraging the the correctly sourced data out of consolidated datastore environment and then loaded this data into the correct product is challenging.
  
 Apache NiFi is an application that seeks to address this big data problem. NiFi is tool that has emerged from a unique background as tool created by the National Security Agency then curated and improved by the open source community.
-NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NIFIs value in a big data world where stovepipes and inflexibility are frequently challenges.
- 
-## ELT Challenges and NiFi
- 
-In the world of big data ETL, or Extract Transform and Load, is a prevalent in most big date projects or architecture. If the data being used is in the perfect format and structure, and the data is housed or collected in the ideal location for the end use of the data, then ETL may be superfluous. Otherwise Extract Transform and Load concepts will come into play. However, enabling ETL is frequently more difficult than it sounds. Data moving between systems effectively is tricky to setup and challenging to refactor on the fly when conditions change. Enter Apache NiFi.
- 
+NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NIFIs value in a big data world where stovepipes and inflexibility are frequently challenges. 
  
 ## NiFi History
  
@@ -44,8 +41,6 @@ NiFi was first developed at the National Security Agency but was released as ope
 ## NiFi Features
  
 NiFi incorporates a straightforward UI to engineer traceable data provence with configurable components. NiFi offers up the ability to custom build processors and incorporate them into a highly customizable flows. Through "…data routing, transformation, and system mediation logic" [@fa18-523-56-www-nifi-nifihomepage] NiFi seeks to automate data flows in a big data environment and give architects the ability to keep data flowing between evolving systems quickly. Amongst a host of features NiFi offers, one sticks out as particularly important because of the challenges associated with what the feature addresses: data errors, data inconsistency, and data irregularity handling. NiFi provides users the ability to incorporate in the flow processes to catch these non-happy path realities in big data. As new situations are discovered a user can quickly build if-then forks in the process to catch, store, or resolve the data issues.
- 
- 
  
 NiFi's main features are:
  
@@ -68,13 +63,11 @@ NiFi's main features are:
 * Content Repository
 * Provenance Repository
 
-
 From the top down NiFi is web browser accessible by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow. NiFi is hosted in the Java Virtual Machine environment or JVM. 
 
 ### Web Server
 
 NiFi easy to use GUI is hosted on the Web Server within the JVM
-
 
 ### Flow Controller
 
@@ -101,19 +94,21 @@ NiFi provides more than 260 processors and more than 48 controller services for 
 **Get** 
  * Examples: GetFTP, GetMongo, GetTCP etc [@fa18-523-56-www-nifi-homepagetechdoc].
  * Similar input type processors: Consume, Extract, Fetch, Listen etc.
+
+
 Nifi provides dozens of Get processor options many other similar input type processors.  A Get processer is commonly used to pick up a file or data and launch a FlowFile. The Get file processer setup typically give configuration options to point to a host, set timing increments for polling and timeouts, set proxy settings, and more[@fa18-523-56-www-nifi-homepagetechdoc].
-
-
 
 **Convert** 
 * Examples: ConvertJSONToSQL, Convert Record, ConvertExceltoCSVProcessor, etc[@fa18-523-56-www-nifi-homepagetechdoc].
 * Similar transformation type processors: Evaluate, Merge, Split, etc 
+
 
 Once data is in the flow NiFi provides dozens of processors to manipulate or transform data. The convert processors can be configured to the expected schema or type from the Get processor and tranform, edit, thin, enrich or many other functions on the data in the flow    [@fa18-523-56-www-nifi-homepagetechdoc].
 
 **Put**
 * Examples: PutFile, PutFTP, PutSQL, PutElasticSearch, PutAzureBlobStorage,etc [@fa18-523-56-www-nifi-homepagetechdoc].
 * Similar output type processors: Publish. 
+
 
 A critical part of a flow in NiFi is pushing the right data out of the flow into the right spot. There are dozens of Put processors that can be configured to set the directory to write files too. Additional configuration options are specific to the destination type to include SSL configuration, cache options, batching options, and many other configuration options based on the destination type [@fa18-523-56-www-nifi-homepagetechdoc].
  
