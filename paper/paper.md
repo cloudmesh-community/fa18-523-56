@@ -181,14 +181,10 @@ Ford's data are being sourced from Open XC which contains vehicle and phone appl
 ## Work Breakdown
 
 * Nhi Tran fa18-523-83
-Use Case
-NiFi Architecture Images and NiFi Cluster Architecture
-NiFi Download, Installing and Getting Started
+Use Case, NiFi Architecture Images, NiFi Cluster Architecture, NiFi Download Installing and Getting Started
 
 * Daniel Hinders fa18-523-56
-Big Data Challanges and NiFi
-NiFi History
-NiFi Architecture
+Big Data Challanges and NiFi, NiFi History, NiFi Architecture
 
 * Both
 NiFi Features
@@ -196,6 +192,8 @@ NiFi Features
 ## Notes (not inlcuded)
 
 :o: citations must be in bitex
+
+(This are not URLs to be included, just reference material while paper is underconstruction.)
  
 * https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
 * https://piazza.com/class/jl6rxey6w413gi?cid=89
