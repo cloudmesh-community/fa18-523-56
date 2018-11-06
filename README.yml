@@ -12,13 +12,13 @@ technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/protobuf.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/nifi-nsa.md
 paper:
-  - title: Nifi
+  - title: Apache NiFi
     keyword: Nifi
     url: https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.md
     group: fa18-523-56
 project:
-  - title: TBD
-    keyword: TBD
+  - title: Apache NiFi Chapter
+    keyword: NiFi
     url: https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-report/report.md
     group: fa18-523-56
     code: https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-code/code
