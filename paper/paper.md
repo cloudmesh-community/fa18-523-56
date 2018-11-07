@@ -15,7 +15,7 @@ Keywords: NiFi, NSA, Data Stream, ETL
 
 ## Big Data Challanges and NiFi  
 
-Big data can be fantastic source of truth for decision making and business 
+Big data can be fantastic source of truth ?:o: what truth? for decision making and business 
 process definition and actualization. However, the complexity of individual 
 datasets, the variability of dataset structure and composition, and the sheer 
 volume of data are challenges to truly leveraging big data in the real world. 
