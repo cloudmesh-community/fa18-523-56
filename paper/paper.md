@@ -6,7 +6,7 @@
 | hid: fa18-523-56 , fa18-523-83
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/paper/paper.md)
  
- * :o: start your section with what NiFi is, 
+ * :o: start your section with what NiFi is, :smile:
  * :o: after reading the introdduction I am confused what Nifi is and is not.
  * :o:continue to use greater sign for quotes
  * :o: remove non ascci chars usch as …
