@@ -8,8 +8,8 @@
  
  * :o: start your section with what NiFi is, (11/7 Dan - moved things around to do this...might add more on intro section?)
  * :o: after reading the introdduction I am confused what Nifi is and is not.
- * :o: continue to use greater sign for quotes
- * :o: remove non ascci chars usch as …
+ * :o: continue to use greater sign for quotes - 11/7 nhi- added greater sign for quote
+ * :o: remove non ascci chars usch as … - 11/7 nhi- removed non ascii chars
  * :o: note section shows it snot completed, so we stopped review
  
 ---
@@ -48,7 +48,9 @@ NiFi was first developed at the National Security Agency but was released as an 
  
 ## NiFi Features
  
-NiFi incorporates a straightforward User Interface (UI) to engineer traceable data provence with configurable components. NiFi offers up the ability to custom build processors and incorporate them into a highly customizable flows. Through "…data routing, transformation, and system mediation logic" [@fa18-523-56-www-nifi-nifihomepage], NiFi seeks to automate data flows in a big data environment and gives architects the ability to keep data flowing between evolving systems quickly. Amongst a host of features NiFi offers, one sticks out as particularly important because of the challenges associated with what the feature addresses: data errors, data inconsistency, and data irregularity handling. NiFi provides users the ability to incorporate in the flow processes to catch these non-happy path realities in big data. As new situations are discovered, a user can quickly build *if-then* forks in the process to catch, store, or resolve the data issues.
+NiFi incorporates a straightforward User Interface (UI) to engineer traceable data provence with configurable components. NiFi offers up the ability to custom build processors and incorporate them into a highly customizable flows. Through 
+>"data routing, transformation, and system mediation logic" [@fa18-523-56-www-nifi-nifihomepage], 
+NiFi seeks to automate data flows in a big data environment and gives architects the ability to keep data flowing between evolving systems quickly. Amongst a host of features NiFi offers, one sticks out as particularly important because of the challenges associated with what the feature addresses: data errors, data inconsistency, and data irregularity handling. NiFi provides users the ability to incorporate in the flow processes to catch these non-happy path realities in big data. As new situations are discovered, a user can quickly build *if-then* forks in the process to catch, store, or resolve the data issues.
  
 NiFi's main features are:
  
@@ -122,6 +124,7 @@ NiFi can also be integrated with ZooKeeper to operate within a cluster. +@fig:ni
 NiFi can be downloaded and installed from its Downloads Page [@fa18-523-56-nifi-download-page] with Linux/Mac *tarball* option, or *zip* file option for Windows, or Homebrew option for Mac [@fa18-523-56-nifi-installation-page].
 
 *For Window*
+
 *Double-click* to run `run-nifi.bat` file from NiFi `bin` subfolder within the installed folder. 
 
 *For Linux/Mac OS X Users*
@@ -188,12 +191,15 @@ Ford's data are being sourced from Open XC which contains vehicle and phone appl
 ## Work Breakdown
 
 * Nhi Tran fa18-523-83
+
 Use Case, NiFi Architecture Images, NiFi Cluster Architecture, NiFi Download Installing and Getting Started
 
 * Daniel Hinders fa18-523-56
+
 Big Data Challanges and NiFi, NiFi History, NiFi Architecture
 
 * Both
+
 NiFi Features
 
 ## Helpful URLs for work on this paper (not inlcuded)
