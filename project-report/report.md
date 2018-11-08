@@ -83,6 +83,22 @@ TBD
 
 
 
-
+Batch vs Live stream (Live)
+ 
+Theory
+Implementation (e.g. Python)
+Benchmark
+A more detailed outline is
+Paper
+Title
+Abstract
+Introductions
+Requirements
+Architecture
+Implementation
+Benchmark
+Conclusions
+Bibliography
+Work breakdown
 
 
