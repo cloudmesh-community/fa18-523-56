@@ -115,7 +115,7 @@ A critical part of a flow in NiFi is pushing the right data out of the flow into
  
 NiFi can also be integrated with ZooKeeper to operate within a cluster. +@fig:nificlusterarchitecture [fa18-523-56-www-nifi-homepagetechdoc] shows how ZooKeeper manages NiFi's nodes by determining primary node, Zookeeper Coordinator, and failover node . Each of the nodes performs the same tasks but processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 
-![NiFi Cluster Architecture](images/nifi_cluster_architecture.PNG){#fig:nificlusterarchitecture}
+![NiFi Cluster Architecture](images/nifi_clusters_architecture.PNG){#fig:nificlusterarchitecture}
 
 ## NiFi Download, Installing and Getting Started
 
