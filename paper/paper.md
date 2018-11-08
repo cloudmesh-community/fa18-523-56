@@ -196,33 +196,11 @@ Big Data Challanges and NiFi, NiFi History, NiFi Architecture
 * Both
 NiFi Features
 
-## Notes (not inlcuded)
+## Helpful URLs for work on this paper (not inlcuded)
 
-:o: citations must be in bitex
-
-(These are not URLs to be included in the paper, they are reference material while paper is underconstruction.)
  
 * https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
 * https://piazza.com/class/jl6rxey6w413gi?cid=89
 * https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
 * https://piazza.com/class/jl6rxey6w413gi?cid=250
-
-
-Batch vs Live stream (Live)
- 
-Theory
-Implementation (e.g. Python)
-Benchmark
-A more detailed outline is
-Paper
-Title
-Abstract
-Introductions
-Requirements
-Architecture
-Implementation
-Benchmark
-Conclusions
-Bibliography
-Work breakdown
 
