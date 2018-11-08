@@ -18,7 +18,9 @@ Keywords: NiFi, NSA, Data Stream, ETL
  
 ---
 
-Apache NiFi
+## Apache NiFi Introduction
+
+NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NiFi's value in a big data world where stovepipes and inflexibility are frequently challenges. 
 
 ## Big Data Challanges and NiFi  
 
@@ -39,8 +41,6 @@ of that data is fairly straightforward.
 But this is rarely where the real use case for bigdata solutions ends. The bigger challenge is dealing with disparate datasets and connecting points of information in a multi-sourced dataset environment. Consolidation of disparate data is therefore extremely important. Furthermore leveraging the the correctly sourced data out of consolidated datastore environment and then loaded this data into the correct product is challenging.
  
 Apache NiFi is an application that seeks to address this big data problem. NiFi is tool that has emerged from a unique background as tool created by the National Security Agency then curated and improved by the open source community.
-
-NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NiFi's value in a big data world where stovepipes and inflexibility are frequently challenges. 
  
 ## NiFi History
  
