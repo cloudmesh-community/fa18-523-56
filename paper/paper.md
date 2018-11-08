@@ -115,7 +115,7 @@ A critical part of a flow in NiFi is pushing the right data out of the flow into
  
 NiFi can also be integrated with ZooKeeper to operate within a cluster. +@fig:nificlusterarchitecture [fa18-523-56-www-nifi-homepagetechdoc] shows how ZooKeeper manages NiFi's nodes by determining primary node, Zookeeper Coordinator, and failover node . Each of the nodes performs the same tasks but processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 
-![NiFi Cluster Architecture](images/nifi_cluster_architecture.png){#fig:nificlusterarchitecture}
+![NiFi Cluster Architecture](images/nifi_cluster_architecture.PNG){#fig:nificlusterarchitecture}
 
 ## NiFi Download, Installing and Getting Started
 
@@ -158,7 +158,7 @@ NiFi is not recommended for:
 
 MasterCard is a card payment and technology company that connects digital transactions globally. +@fig:mastercardnififlow [@www-fa18-523-56-nifi-mastercard] shows one of the use cases for NiFi at MasterCard, which is a file transfer mechanism. 
 
-![Mastercard NiFi Flow](images/mastercard_nifi_flow.png){#fig:mastercardnififlow}
+![Mastercard NiFi Flow](images/mastercard_nifi_flow.PNG){#fig:mastercardnififlow}
 
 Batch processing is still a major part of MasterCard's ecosystem which requires multiple formatted flat files being created, transfered, and picked up by applications [@www-fa18-523-56-nifi-mastercard]. MasterCard uses NiFi's file transfer features to convert files source into data stream and perform specific workflow to direct data into various target systems [@www-fa18-523-56-nifi-mastercard]. Target system could be a messaging systems, Hadoop landing zone, databases. NiFi can also feeds data and trigger a map-reduce or spark jobs after transfer [@www-fa18-523-56-nifi-mastercard].
 
@@ -169,7 +169,7 @@ MasterCard provided a demo which demonstrate the use case of them using NiFi to 
 
 OpenText Magellan is an artifical intelligence product that supports machine learning and advance analytics. At OpenText Magellan organization, NiFi was utilized as part of their streaming analytics infrastrusture to allow continuous process and real-time analysis [@www-fa18-523-56-opentext-magellan-nifi]. OpenText Magellan's infrastructure involves source applications, NiFi, Apacha Spark, Python, R, Scala, and other Magellan BI and Reporting tools [@www-fa18-523-56-opentext-magellan-nifi]. +@fig:opentextmagellannififlow [@www-fa18-523-56-opentext-magellan-nifi] shows a typical process of streaming analytics process at Opentext Magellan, which involves five steps: Data Acquisition, Data Routing, Streaming Processing, Machine Learning, Prediction Results, and Actionable Insights [@www-fa18-523-56-opentext-magellan-nifi].
 
-![Opentext Magellan NiFi Flow](images/opentext_magellan_nifi_flow.png){#fig:opentextmagellannififlow}
+![Opentext Magellan NiFi Flow](images/opentext_magellan_nifi_flow.PNG){#fig:opentextmagellannififlow}
 
 NiFi is used during the first Data Acquisition steps to collect data from multiple sources such as smart devices, social media, online transactions, and log monitoring [@www-fa18-523-56-opentext-magellan-nifi]. The real-time data can then be combined with other historical data or other data sources before being feed into downstream system [@www-fa18-523-56-opentext-magellan-nifi]. Data is then being streamed by Kafka in Data Routing step and then being read and applied business rules by Spark Streaming API before it is being store in data lake [@www-fa18-523-56-opentext-magellan-nifi]. Spark Streaming API will apply machine learning prediction model in Machine Learning step and then being saved in Prediction Results [@www-fa18-523-56-opentext-magellan-nifi]. One the result is created, organizations can take quick decisions to provide business benefits and insights [@www-fa18-523-56-opentext-magellan-nifi].
 
