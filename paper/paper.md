@@ -66,7 +66,7 @@ NiFi's main features are:
 
 +@fig:nifiarchitecture [fa18-523-56-www-nifi-homepagetechdoc] shows the main components in NiFi architecture.
 
-![NiFi Architecture](images/nifi_architecture.png){#fig:nifiarchitecture}
+![NiFi Architecture](images/nifi_architecture.PNG){#fig:nifiarchitecture}
 
 From the top down, NiFi is web browser accessible by a NiFi hosted Web Server. NiFi processor operations are managed through the Flow Controller and the three repositories; FlowFile, Content, and Provenance work to process data on and off disk and in a NiFi flow. NiFi is hosted in the Java Virtual Machine environment or JVM [fa18-523-56-www-nifi-homepagetechdoc]. 
 
