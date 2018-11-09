@@ -60,12 +60,18 @@ Apache NiFi is an application that seeks to address this big data problem. NiFi 
  
 ## NiFi History
  
-NiFi was first developed at the National Security Agency but was released as an open source project to the public. "NiFi was submitted to The Apache Software Foundation (ASF) in November 2014 as part of the NSA Technology Transfer Program" [@fa18-523-56-www-nifi-forbes]. Since then, Apache Foundation has used its volunteer organization to grow and mature the project [@fa18-523-56-www-nifi-issartetlsimple].
+NiFi was first developed at the National Security Agency but was released as an open source project to the public. 
+
+>"NiFi was submitted to The Apache Software Foundation (ASF) in November 2014 as part of the NSA Technology Transfer Program" [@fa18-523-56-www-nifi-forbes]. 
+
+Since then, Apache Foundation has used its volunteer organization to grow and mature the project [@fa18-523-56-www-nifi-issartetlsimple].
  
 ## NiFi Features
  
 NiFi incorporates a straightforward User Interface (UI) to engineer traceable data provence with configurable components. NiFi offers up the ability to custom build processors and incorporate them into a highly customizable flows. Through 
+
 >"data routing, transformation, and system mediation logic" [@fa18-523-56-www-nifi-nifihomepage], 
+
 NiFi seeks to automate data flows in a big data environment and gives architects the ability to keep data flowing between evolving systems quickly. Amongst a host of features NiFi offers, one sticks out as particularly important because of the challenges associated with what the feature addresses: data errors, data inconsistency, and data irregularity handling. NiFi provides users the ability to incorporate in the flow processes to catch these non-happy path realities in big data. As new situations are discovered, a user can quickly build *if-then* forks in the process to catch, store, or resolve the data issues.
  
 NiFi's main features are:
