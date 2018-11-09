@@ -66,6 +66,23 @@
 * Updating tech docs with feedback from prof and TAs
 
 ### Week Fri 11/03/18 - 11/09/18
+* work on paper
+
+# notes from paper
+ * :o: start your section with what NiFi is, (11/7 Dan - moved things around to do this...might add more on intro section?)
+ * :o: after reading the introdduction I am confused what Nifi is and is not. (11/8 - moved section up to intro)
+ * :o: continue to use greater sign for quotes - 11/7 nhi- added greater sign for quote
+ * :o: remove non ascci chars usch as … - 11/7 nhi- removed non ascii chars
+ * :o: note section shows it snot completed, so we stopped review
+
+## Helpful URLs for work on this paper (not inlcuded)
+
+ 
+* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
+* https://piazza.com/class/jl6rxey6w413gi?cid=89
+* https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
+* https://piazza.com/class/jl6rxey6w413gi?cid=250
+
 
 # WORK SPACE AND NOTES
 
