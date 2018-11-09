@@ -22,6 +22,22 @@ Keywords: NiFi, NSA, Data Stream, ETL
 
 NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NiFi's value in a big data world where stovepipes and inflexibility are frequently challenges. 
 
+NiFi is a tool for:
+
+* Moving data between systems, including modern systems such as social media sources, AWS cloud server, Hadoop, MongoDB, and so on
+* Delivering data to analytics platforms
+* Format Conversion, extracting/parsing data
+* Data or files routing decisions
+* Real-time data streaming
+[@www-fa18-523-56-udemy-nifi]
+
+NiFi is not recommended for:
+
+* Distributed Computation
+* Complex Event Processing
+* Join/ Aggregated Functions
+[@www-fa18-523-56-udemy-nifi]
+
 ## Big Data Challanges and NiFi  
 
 Big data can be fantastic source of information for decision making and business 
@@ -141,21 +157,6 @@ Once NiFi has been started, the GUI can be accessed using web browser via *http:
 
 ## Use Case
 
-NiFi is a tool for:
-
-* Moving data between systems, including modern systems such as social media sources, AWS cloud server, Hadoop, MongoDB, and so on
-* Delivering data to analytics platforms
-* Format Conversion, extracting/parsing data
-* Data or files routing decisions
-* Real-time data streaming
-[@www-fa18-523-56-udemy-nifi]
-
-NiFi is not recommended for:
-
-* Distributed Computation
-* Complex Event Processing
-* Join/ Aggregated Functions
-[@www-fa18-523-56-udemy-nifi]
 
 ### File Transfer and Routing at MasterCard
 
