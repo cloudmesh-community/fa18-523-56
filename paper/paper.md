@@ -113,24 +113,26 @@ In NiFi, the provenance repository stores historic event data. The provenance da
 NiFi provides more than 260 processors and more than 48 controller services for users to integrate into a flow from the graphic user interface(GUI) of Nifi[@fa18-523-56-www-nifi-creatingprocessors]. Processors are base on underlying controller services in the java virtual machine. Controller services can be centered around a security implementation, database CRUD (create, read, updates, and deletes), and many other foundational areas. Users can create custom processors from existing controller services or create a customer controller service as well [@fa18-523-56-www-nifi-creatingprocessors].
 
 #### Processor Examples
-**Get** 
- * Examples: GetFTP, GetMongo, GetTCP, etc. [@fa18-523-56-www-nifi-homepagetechdoc]
- * Similar input type processors: Consume, Extract, Fetch, Listen, etc.
+* **Get** 
+  * Examples: GetFTP, GetMongo, GetTCP, etc. [@fa18-523-56-www-nifi-homepagetechdoc]
+  * Similar input type processors: Consume, Extract, Fetch, Listen, etc.
 
 Nifi provides dozens of *Get* processor options and many other similar input type processors.  A *Get* processer is commonly used to pick up a file or data and launch a FlowFile. The *Get* file processer setup typically gives configuration options to point to a host, set timing increments for polling and timeouts, set proxy settings, and more [@fa18-523-56-www-nifi-homepagetechdoc].
 
-**Convert** 
-* Examples: ConvertJSONToSQL, Convert Record, ConvertExceltoCSVProcessor, etc. [@fa18-523-56-www-nifi-homepagetechdoc]
-* Similar transformation type processors: Evaluate, Merge, Split, etc. 
+* **Convert** 
+  * Examples: ConvertJSONToSQL, Convert Record, ConvertExceltoCSVProcessor, etc. [@fa18-523-56-www-nifi-homepagetechdoc]
+  * Similar transformation type processors: Evaluate, Merge, Split, etc. 
 
 Once data is in the flow, NiFi provides dozens of processors to manipulate or transform data. The *Convert* processors can be configured to the expected schema or type from the *Get* processor and tranform, edit, thin, enrich, or many other functions on the data in the flow [@fa18-523-56-www-nifi-homepagetechdoc].
 
-**Put**
-* Examples: PutFile, PutFTP, PutSQL, PutElasticSearch, PutAzureBlobStorage, etc. [@fa18-523-56-www-nifi-homepagetechdoc]
-* Similar output type processors: Publish, etc. 
+* **Put**
+  * Examples: PutFile, PutFTP, PutSQL, PutElasticSearch, PutAzureBlobStorage, etc. [@fa18-523-56-www-nifi-homepagetechdoc]
+  * Similar output type processors: Publish, etc. 
 
 A critical part of a flow in NiFi is pushing the right data out of the flow into the right spot. There are dozens of *Put* processors that can be configured to set the directory to write files too. Additional configuration options are specific to the destination type to include SSL configuration, cache options, batching options, and many other configuration options based on the destination type [@fa18-523-56-www-nifi-homepagetechdoc].
- 
+
+### NiFi Clusters
+
 NiFi can also be integrated with ZooKeeper to operate within a cluster. +@fig:nificlusterarchitecture [fa18-523-56-www-nifi-homepagetechdoc] shows how ZooKeeper manages NiFi's nodes by determining primary node, Zookeeper Coordinator, and failover node . Each of the nodes performs the same tasks but processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 
 ![NiFi Cluster Architecture](images/nifi_clusters_architecture.PNG){#fig:nificlusterarchitecture}
