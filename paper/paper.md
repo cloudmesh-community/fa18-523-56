@@ -227,7 +227,9 @@ Use Terminal to run `bin/nifi.sh` . Application will run and will be shutdown wh
 
 *NiFi as a Service in Linux and Max OS X*
 
-To install NiFi as a Service, run the command `bin/nifi.sh install <service_name>`. Without specifying specific *<service_name>*, nifi service name will be defaulted to *nifi*.
+To install NiFi as a Service, run the command `bin/nifi.sh install
+<service_name>`. Without specifying specific `<service_name>`, nifi
+service name will be defaulted to *nifi*.
 
 To start NiFi service after installation, run sudo `service
 <service_name> start` . To stop, run `sudo service <service_name>
