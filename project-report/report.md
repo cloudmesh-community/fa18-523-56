@@ -1,4 +1,4 @@
-# NIFI Chapter :hand: fa18-523-56
+# Apache NiFi Chapter :hand: fa18-523-56
 
 | Daniel Hinders
 | dhinders@iu.edu
@@ -13,20 +13,44 @@
 * Install NIFI and setup a data stream with various processors
 ---
 
-Keywords: ETL, Data Stream, NIFI, NSA, 
+Keywords: ETL, Data Stream, NiFi, NSA, 
 
 
-## Introduction
+## Apache NiFi Introduction
 
-## NIFI History
+## NiFi History
 
-## Prerequisites
+## NiFi Features
 
-### Install NIFI
+## NiFi Architecture
 
-### Connected to Data Source
+## Install NiFi
 
-## Flowfiles
+*Minimum System req*
+
+### Apache NiFi - Windows
+
+*1* 
+NiFi can be downloaded from [@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
+
+*2*
+Unzip the fie
+
+*3*
+update the configuration file
+
+*4*
+Install Java 
+
+*5*
+Start up NiFi
+
+
+## Building Basic NiFi Flows
+
+### Log File Tail
+
+### 
 
 ## Processors
 
