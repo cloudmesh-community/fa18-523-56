@@ -261,7 +261,7 @@ To start NiFi service after installation, run sudo `service
 stop`
 
 Once NiFi has been started, the GUI can be accessed using web browser
-via *http://localhost:8080/nifi* . The port and host name can be
+via <http://localhost:8080/nifi> . The port and host name can be
 configured and changed depending on which server or setting in
 `conf/nifi.properties` is used [@fa18-523-56-nifi-installation-page].
 
