@@ -14,16 +14,27 @@ Keywords: NiFi, NSA, Data Stream, ETL
 
 ## Apache NiFi Introduction
 
-NiFi is a customizable tool for building flexible data flows while preserving data provenance and security [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to build or alter an ETL flow with a few clicks. NiFi builds Gets, Converts, and Pulls in a GUI and allows the user to build and customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This flexibility and usability is key to NiFi's value in a big data world where stovepipes and inflexibility are frequently challenges. 
+NiFi is a customizable tool for building flexible data flows while
+preserving data provenance and security
+[@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to
+build or alter an ETL flow with a few clicks. NiFi builds Gets,
+Converts, and Pulls in a GUI and allows the user to build and
+customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This
+flexibility and usability is key to NiFi's value in a big data world
+where stovepipes and inflexibility are frequently challenges.
 
 NiFi is a tool for:
 
-* Moving data between systems, including modern systems such as social media sources, AWS cloud server, Hadoop, MongoDB, and so on
+* Moving data between systems, including modern systems such as social
+  media sources, AWS cloud server, Hadoop, MongoDB, and so on
 * Delivering data to analytics platforms
 * Format Conversion, extracting/parsing data
 * Data or files routing decisions
 * Real-time data streaming
 [@www-fa18-523-56-udemy-nifi]
+
+:o: it is unclear where the citation applies to or if its quoted.
+shoudl it be before the list starts, same issue in other spots of the paper.
 
 NiFi is not recommended for:
 
@@ -66,7 +77,9 @@ by the open source community.
 NiFi was first developed at the National Security Agency but was
 released as an open source project to the public.
 
->"NiFi was submitted to The Apache Software Foundation (ASF) in November 2014 as part of the NSA Technology Transfer Program" [@fa18-523-56-www-nifi-forbes]. 
+> "NiFi was submitted to The Apache Software Foundation (ASF) in
+> November 2014 as part of the NSA Technology Transfer Program"
+> [@fa18-523-56-www-nifi-forbes].
 
 Since then, Apache Foundation has used its volunteer organization to
 grow and mature the project [@fa18-523-56-www-nifi-issartetlsimple].
@@ -78,7 +91,8 @@ traceable data provence with configurable components. NiFi offers up
 the ability to custom build processors and incorporate them into a
 highly customizable flows. Through
 
->"data routing, transformation, and system mediation logic" [@fa18-523-56-www-nifi-nifihomepage], 
+> "data routing, transformation, and system mediation logic"
+> [@fa18-523-56-www-nifi-nifihomepage],
 
 NiFi seeks to automate data flows in a big data environment and gives
 architects the ability to keep data flowing between evolving systems
@@ -93,15 +107,25 @@ data issues.
  
 NiFi's main features are:
  
-* *Guaranteed delivery*: use purpose-built persistent write-ahead log and content repository to ensure guaranteed delivery in an effective way
-* *Web-based user interface*: easy to use web-based GUI with drag and drop features that allows users to build, schedule, control, and monitor dataflow
-* *Provenance*: provide ability to track data flows through the systems with audit trail and traceability functionalities
-* *Queue Prioritization*: provide the ability to configure and prioritize job flow and determine the order of events
-* *Secure*: provide and support multiple security protocols and encryptions, as well as authorization management
-* *Extensibility*: provide flexibility by allowing pre-built and built-your-own extension the be integrated
-* *Scalability*: supports scale-out by clustering architecture as well as scale-up and scale-down 
-[@www-nifi] [@fa18-523-56-www-nifi-homepagetechdoc]
- 
+* *Guaranteed delivery*: use purpose-built persistent write-ahead log
+  and content repository to ensure guaranteed delivery in an effective
+  way
+* *Web-based user interface*: easy to use web-based GUI with drag and
+  drop features that allows users to build, schedule, control, and
+  monitor dataflow
+* *Provenance*: provide ability to track data flows through the
+  systems with audit trail and traceability functionalities
+* *Queue Prioritization*: provide the ability to configure and
+  prioritize job flow and determine the order of events
+* *Secure*: provide and support multiple security protocols and
+  encryptions, as well as authorization management
+* *Extensibility*: provide flexibility by allowing pre-built and
+  built-your-own extension the be integrated
+* *Scalability*: supports scale-out by clustering architecture as well
+as scale-up and scale-down [@www-nifi]
+[@fa18-523-56-www-nifi-homepagetechdoc]
+
+:o: citation placement unclear.
  
 ## NiFi Architecture
 
@@ -223,7 +247,8 @@ or *zip* file option for Windows, or Homebrew option for Mac
 
 *For Linux/Mac OS X Users*
 
-Use Terminal to run `bin/nifi.sh` . Application will run and will be shutdown when the command is terminated.
+Use Terminal to run `bin/nifi.sh` . Application will run and will be
+shutdown when the command is terminated.
 
 *NiFi as a Service in Linux and Max OS X*
 
