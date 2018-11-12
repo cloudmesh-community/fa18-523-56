@@ -8,7 +8,7 @@
  
 ---
  
-Keywords: NiFi, NSA, Data Stream, ETL, 
+Keywords: NiFi, NSA, Data Stream, ETL
  
 ---
 
