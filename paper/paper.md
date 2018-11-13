@@ -26,22 +26,19 @@ where stovepipes and inflexibility are frequently challenges.
 NiFi is a tool for:
 
 * Moving data between systems, including modern systems such as social
-  media sources, AWS cloud server, Hadoop, MongoDB, and so on
-* Delivering data to analytics platforms
-* Format Conversion, extracting/parsing data
-* Data or files routing decisions
-* Real-time data streaming
-[@www-fa18-523-56-udemy-nifi]
+  media sources, AWS cloud server, Hadoop, MongoDB, and so on[@www-fa18-523-56-udemy-nifi]
+* Delivering data to analytics platforms[@www-fa18-523-56-udemy-nifi]
+* Format Conversion, extracting/parsing data[@www-fa18-523-56-udemy-nifi]
+* Data or files routing decisions[@www-fa18-523-56-udemy-nifi]
+* Real-time data streaming[@www-fa18-523-56-udemy-nifi]
 
-:o: it is unclear where the citation applies to or if its quoted.
-shoudl it be before the list starts, same issue in other spots of the paper.
 
 NiFi is not recommended for:
 
-* Distributed Computation
-* Complex Event Processing
-* Join/ Aggregated Functions
-[@www-fa18-523-56-udemy-nifi]
+* Distributed Computation[@www-fa18-523-56-udemy-nifi]
+* Complex Event Processing[@www-fa18-523-56-udemy-nifi]
+* Join/ Aggregated Functions[@www-fa18-523-56-udemy-nifi]
+
 
 ## Big Data Challanges and NiFi  
 
@@ -109,23 +106,28 @@ NiFi's main features are:
  
 * *Guaranteed delivery*: use purpose-built persistent write-ahead log
   and content repository to ensure guaranteed delivery in an effective
-  way
+  way[@www-nifi]
+[@fa18-523-56-www-nifi-homepagetechdoc].
 * *Web-based user interface*: easy to use web-based GUI with drag and
   drop features that allows users to build, schedule, control, and
-  monitor dataflow
+  monitor dataflow[@www-nifi]
+[@fa18-523-56-www-nifi-homepagetechdoc].
 * *Provenance*: provide ability to track data flows through the
-  systems with audit trail and traceability functionalities
+  systems with audit trail and traceability functionalities[@www-nifi]
+[@fa18-523-56-www-nifi-homepagetechdoc].
 * *Queue Prioritization*: provide the ability to configure and
-  prioritize job flow and determine the order of events
+  prioritize job flow and determine the order of events[@www-nifi]
+[@fa18-523-56-www-nifi-homepagetechdoc].
 * *Secure*: provide and support multiple security protocols and
-  encryptions, as well as authorization management
+  encryptions, as well as authorization management[@www-nifi]
+[@fa18-523-56-www-nifi-homepagetechdoc].
 * *Extensibility*: provide flexibility by allowing pre-built and
-  built-your-own extension the be integrated
+  built-your-own extension the be integrated[@www-nifi]
+[@fa18-523-56-www-nifi-homepagetechdoc].
 * *Scalability*: supports scale-out by clustering architecture as well
 as scale-up and scale-down [@www-nifi]
-[@fa18-523-56-www-nifi-homepagetechdoc]
+[@fa18-523-56-www-nifi-homepagetechdoc].
 
-:o: citation placement unclear.
  
 ## NiFi Architecture
 
