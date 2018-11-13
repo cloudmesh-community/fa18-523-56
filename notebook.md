@@ -77,7 +77,7 @@
 
 ## Helpful URLs for work on this paper (not inlcuded)
 
- 
+* https://piazza.com/class/jl6rxey6w413gi?cid=202
 * https://github.com/cloudmesh-community/proceedings-fa18/blob/master/list.md
 * https://piazza.com/class/jl6rxey6w413gi?cid=89
 * https://github.com/cloudmesh-community/proceedings-fa18/blob/master/paper/paper.md
