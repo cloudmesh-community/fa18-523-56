@@ -17,6 +17,7 @@ Keywords: ETL, Data Stream, NiFi, NSA,
 
 
 ## Apache NiFi Introduction
+![NiFi Architecture](images/nifi_architecture.PNG){#fig:nifiarchitecture}
 
 ## NiFi History
 
