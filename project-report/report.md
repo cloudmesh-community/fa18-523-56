@@ -69,17 +69,20 @@ Run the windows batch file
 run-nifi.bat
 ```
 Wait about 5 minutes for NiFi to load
+
 **5**
+
 Open the NiFi GUI by opening a browser and navigate to
 ```
 http://localhost:9090/nifi
 ```
-![nifi_nifihome](images/nifi_home.png)
-{#fig:nifi_home}
+![nifi_nifihome](images/nifi_nifihome.png)
+{#fig:nifi_nifihome}
 
 ## Building a Basic NiFi Flow
 
 **1**
+
 Click and drag the processor icon fron the top tray to add a processor.
 You will be able to select from hundreds of processosrs.
 Type into the filter "tail" and select the TailFile processor and click "ADD"
