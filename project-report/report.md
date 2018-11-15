@@ -80,16 +80,35 @@ http://localhost:9090/nifi
 ![nifi_nifihome](images/nifi_nifihome.png)
 {#fig:nifi_nifihome}
 
-## Building a Basic NiFi Flow
+## Building a NiFi Flow
 
-**1**
-
-Click and drag the processor icon fron the top tray to add a processor.
-You will be able to select from hundreds of processosrs.
+**1** Add a TailFile Processor by clicking and draging the processor icon fron the top tray to add a processor.
 Type into the filter "tail" and select the TailFile processor and click "ADD"
 
 ![nifi_processor_tailfile](images/nifi_processor_tailfile.png)
 {#fig:nifi_processor_tailfile}
+
+**2** Configure the TailFile Processor by right-clicking on the process and click configure.
+
+![nifi_processor_config](images/nifi_processor_config.png)
+{#fig:nifi_processor_config}
+
+Click the properties tab and click the value for the property "File(s) to Tail"
+
+A box will appear to paste the location of the file to tail. For this example I will use a log file for a music player because it will provide a lot of data.
+
+Use / when inputing file path:
+
+```
+/AppData/Local/Amazon Music/Logs/AmazonMusic.log
+```
+
+![nifi_tailfile_config](images/nifi_tailfile_config.png)
+{#fig:nifi_tailfile_config}
+
+Click OK and then click APPLY
+
+**3** Add a 
 
 ### Log File Tail
 
