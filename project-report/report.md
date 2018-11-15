@@ -17,7 +17,8 @@ Keywords: ETL, Data Stream, NiFi, NSA,
 
 
 ## Apache NiFi Introduction
-![NiFi Architecture](images/nifi_architecture.PNG){#fig:nifiarchitecture}
+![NiFi Architecture](images/nifi_architecture.PNG)
+{#fig:nifiarchitecture}
 
 ## NiFi History
 
@@ -35,7 +36,8 @@ Keywords: ETL, Data Stream, NiFi, NSA,
 **1**
 NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
 
-![nifi_download](images/nifi_download.png){#fig:nifi_download}
+![nifi_download](images/nifi_download.png)
+{#fig:nifi_download}
 
 **2**
 Unzip the install package.
@@ -45,19 +47,23 @@ Navigate to the conf directory
 ```bash 
 nifi-1.8.0-bin\nifi-1.8.0\conf
 ```
-![nifi_config](images/nifi_config.png){#fig:nifi_config}
+![nifi_config](images/nifi_config.png)
+{#fig:nifi_config}
 Open the file with a text editor
 ```bash 
 nifi.properties
 ```
 Edit nifi.web.http.port= to the desired port
-![nifi_properties](images/nifi_properties.png){#fig:nifi_properties}
+![nifi_properties](images/nifi_properties.png)
+{#fig:nifi_properties}
+
 **4**
 Start up NiFi by navigating to
 ```bash 
 nifi-1.8.0-bin\nifi-1.8.0\bin
 ```
-![nifi_bin](images/nifi_bins.png){#fig:nifi_bin}
+![nifi_bin](images/nifi_bins.png)
+{#fig:nifi_bin}
 Run the windows batch file
 ```bash 
 run-nifi.bat
@@ -65,7 +71,7 @@ run-nifi.bat
 **5**
 Open the NiFi GUI by opening a browser and navigate to
 ```
-http://localhost:9090/nifi/
+http://localhost:9090/
 ```
 
 ## Building Basic NiFi Flows
