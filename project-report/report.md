@@ -303,7 +303,11 @@ Open the configuration options for the processor and on the settings tab in the 
 ![nifi_splittext_config2](images/nifi_splittext2_config.PNG)
 {#fig:nifi_splittext_config2}
 
+
+```
+NOTE
 This provides direction if there is a failure at this step if a file can't be split any what to do with the original file after it is split. This flexiablity that NiFi provides requires extra configuration choices but provides the NiFi admin extensive control over every aspect of the flow being built.
+```
 
 Click the properties tab and change the property Line Split Count to a value of "1"
 
@@ -320,14 +324,22 @@ Click the properties tab and change the property Match Requirement to "content m
 
 Click the + in the upper right corner to add a property. 
 
+```
+NOTE
 This property will be used to select a word or pharse from the rows of the log file. When the word is seen in the row the content of the row will be routed down stream. For this example we will use "AddToLibrary" when a user in the music player adds a song to the library
 We will use "ClientImplWinHTTP.cpp:525" which is the tag in the log when a song plays in the music player
+```
 
 After naming the new property click OK
 
-Click on the value and use the NiFi expression language insert the tags we will use to select the rows for processing. The NiFi experssion language can be found on the Apahce NiFi website [@fa18-523-56-www-nifi-expressionlanguageguide].
+Click on the value and use the NiFi expression language insert the tags we will use to select the rows for processing. 
 
-We will use these tags for our new properties
+```
+NOTE
+The NiFi experssion language can be found on the Apahce NiFi website [@fa18-523-56-www-nifi-expressionlanguageguide].
+```
+
+We will use these tags for our new properties:
 
 ```
 \bAddToLibrary\b
