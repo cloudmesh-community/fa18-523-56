@@ -112,12 +112,15 @@ Click OK and then click APPLY
 
 Open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "failure" and "original"
 
+![nifi_splittext_config2](images/nifi_splittext2_config.PNG)
+{#fig:nifi_splittext_config2}
+
 This provides direction if there is a failure at this step if a file can't be split any what to do with the original file after it is split. This flexiablity that NiFi provides requires extra configuration choices but provides the NiFi admin extensive control over every aspect of the flow being built.
 
 Click the properties tab and change the property Line Split Count to a value of "1"
 
-![nifi_splittex_config](images/nifi_splittex_config.PNG)
-{#fig:nifi_splittex_config}
+![nifi_splittext_config](images/nifi_splittext_config.PNG)
+{#fig:nifi_splittext_config}
 
 This will split each line of the log file into one row that will be processed independently in the rest of the flow.
 
@@ -134,9 +137,19 @@ We will use "ClientImplWinHTTP.cpp:525" which is the tag in the log when a song 
 
 After naming the new property click OK
 
-[@fa18-523-56-www-nifi-expressionlanguageguide]
+Click on the value and use the NiFi expression language insert the tags we will use to select the rows for processing. The NiFi experssion language can be found on the Apahce NiFi website [@fa18-523-56-www-nifi-expressionlanguageguide].
 
+We will use these tags for our new properties
 
+```
+\bAddToLibrary\b
+\bClientImplWinHTTP.cpp:525\b
+```
+
+![nifi_routeoncontent_config](images/nifi_routeoncontent_config.PNG)
+{#fig:nifi_routeoncontent_config}
+
+Once all properties have been added click APPLY
 
 
 ### Log File Tail
