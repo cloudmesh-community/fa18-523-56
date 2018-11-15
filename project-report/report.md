@@ -34,7 +34,7 @@ Keywords: ETL, Data Stream, NiFi, NSA,
 *1* 
 NiFi can be downloaded from [@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
 
-![nifi_download](images/nifi_download.PNG){#fig:nifi_download}
+![nifi_download](images/nifi_download.png){#fig:nifi_download}
 
 *2*
 Unzip the fie
