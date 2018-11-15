@@ -116,8 +116,8 @@ This provides direction if there is a failure at this step if a file can't be sp
 
 Click the properties tab and change the property Line Split Count to a value of "1"
 
-![nifi_splittext_config](images/nifi_splittext_config.PNG)
-{#fig:nifi_splittext_config}
+![nifi_splittex_config](images/nifi_splittex_config.PNG)
+{#fig:nifi_splittex_config}
 
 This will split each line of the log file into one row that will be processed independently in the rest of the flow.
 
@@ -129,10 +129,13 @@ Click the properties tab and change the property Match Requirement to "content m
 
 Click the + in the upper right corner to add a property. 
 
-This property will be used to select a word or pharse from the rows of the log file. When the word is seen in the row the content of the row will be routed down stream. For this example we will use "AddToLibrary" when a user in the music player adds a track to the library
-We will use "ClientImplWinHTTP.cpp:525" which is the message in the log when a song plays in the music player
+This property will be used to select a word or pharse from the rows of the log file. When the word is seen in the row the content of the row will be routed down stream. For this example we will use "AddToLibrary" when a user in the music player adds a song to the library
+We will use "ClientImplWinHTTP.cpp:525" which is the tag in the log when a song plays in the music player
 
 After naming the new property click OK
+
+[@fa18-523-56-www-nifi-expressionlanguageguide]
+
 
 
 
