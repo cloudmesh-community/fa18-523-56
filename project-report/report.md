@@ -27,19 +27,20 @@ Keywords: ETL, Data Stream, NiFi, NSA,
 
 ## Install NiFi
 
-*Minimum System req*
 
 ### Apache NiFi - Windows
 
-*1* 
-NiFi can be downloaded from [@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
+(Note: Assumes a recent verison of JAVA is installed)
+
+**1**
+NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
 
 ![nifi_download](images/nifi_download.png){#fig:nifi_download}
 
-*2*
+**2**
 Unzip the install package.
 
-*3*
+**3**
 Navigate to the conf directory
 ```bash 
 nifi-1.8.0-bin\nifi-1.8.0\conf
@@ -49,14 +50,23 @@ Open the file with a text editor
 ```bash 
 nifi.properties
 ```
-Edit the nifi.web.http.port= to the desired port
+Edit nifi.web.http.port= to the desired port
 ![nifi_properties](images/nifi_properties.png){#fig:nifi_properties}
-*4*
-Install Java 
-
-*5*
-Start up NiFi
-
+**4**
+Start up NiFi by navigating to
+```bash 
+nifi-1.8.0-bin\nifi-1.8.0\bin
+```
+![nifi_bin](images/nifi_bins.png){#fig:nifi_bin}
+Run the windows batch file
+```bash 
+run-nifi.bat
+```
+**5**
+Open the NiFi GUI by opening a browser and navigate to
+```
+http://localhost:9090/nifi/
+```
 
 ## Building Basic NiFi Flows
 
