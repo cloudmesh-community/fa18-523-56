@@ -63,19 +63,25 @@ Start up NiFi by navigating to
 ``` 
 nifi-1.8.0-bin\nifi-1.8.0\bin
 ```
-![nifi_bin](images/nifi_bins.png)
+![nifi_bin](images/nifi_bin.png)
 {#fig:nifi_bin}
 Run the windows batch file
 ``` 
 run-nifi.bat
 ```
+Wait about 5 minutes for NiFi to load
 **5**
 Open the NiFi GUI by opening a browser and navigate to
 ```
-http://localhost:9090/
+http://localhost:9090/nifi
 ```
+![nifi_nifihome](images/nifi_home.png)
+{#fig:nifi_home}
 
-## Building Basic NiFi Flows
+## Building a Basic NiFi Flow
+
+**1**
+Click and drag the 
 
 ### Log File Tail
 
