@@ -37,11 +37,20 @@ NiFi can be downloaded from [@fa18-523-56-nifi-download-page]. Select the latest
 ![nifi_download](images/nifi_download.png){#fig:nifi_download}
 
 *2*
-Unzip the fie
+Unzip the install package.
 
 *3*
-update the configuration file
-
+Navigate to the conf directory
+```bash 
+nifi-1.8.0-bin\nifi-1.8.0\conf
+```
+![nifi_config](images/nifi_config.png){#fig:nifi_config}
+Open the file with a text editor
+```bash 
+nifi.properties
+```
+Edit the nifi.web.http.port= to the desired port
+![nifi_properties](images/nifi_properties.png){#fig:nifi_properties}
 *4*
 Install Java 
 
