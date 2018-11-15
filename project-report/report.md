@@ -40,11 +40,9 @@ NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page
 
 {#fig:nifi_download}
 
-**2**
-Unzip the install package.
+**2** Unzip the install package.
 
-**3**
-Navigate to the configuration directory:
+**3** Navigate to the configuration directory:
 ``` 
 nifi-1.8.0-bin\nifi-1.8.0\conf
 ```
@@ -57,25 +55,28 @@ Open nifi.properties file with a text editor and edit nifi.web.http.port= to the
 ![nifi_properties](images/nifi_properties.png)
 {#fig:nifi_properties}
 
-**4**
-Start up NiFi by navigating to
+**4** Start up NiFi by navigating to
+
 ``` 
 nifi-1.8.0-bin\nifi-1.8.0\bin
 ```
+
 ![nifi_bin](images/nifi_bin.png)
 {#fig:nifi_bin}
+
 Run the windows batch file
+
 ``` 
 run-nifi.bat
 ```
 Wait about 5 minutes for NiFi to load
 
-**5**
+**5** Open the NiFi GUI by opening a browser and navigate to
 
-Open the NiFi GUI by opening a browser and navigate to
 ```
 http://localhost:9090/nifi
 ```
+
 ![nifi_nifihome](images/nifi_nifihome.png)
 {#fig:nifi_nifihome}
 
