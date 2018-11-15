@@ -52,9 +52,8 @@ nifi-1.8.0-bin\nifi-1.8.0\conf
 
 {#fig:nifi_config}
 
-Open nifi.properties file with a text editor:
+Open nifi.properties file with a text editor and edit nifi.web.http.port= to the desired port
 
-Edit nifi.web.http.port= to the desired port
 ![nifi_properties](images/nifi_properties.png)
 {#fig:nifi_properties}
 
@@ -81,7 +80,12 @@ http://localhost:9090/nifi
 ## Building a Basic NiFi Flow
 
 **1**
-Click and drag the 
+Click and drag the processor icon fron the top tray to add a processor.
+You will be able to select from hundreds of processosrs.
+Type into the filter "tail" and select the TailFile processor and click "ADD"
+
+![nifi_processor_tailfile](images/nifi_processor_tailfile.png)
+{#fig:nifi_processor_tailfile}
 
 ### Log File Tail
 
