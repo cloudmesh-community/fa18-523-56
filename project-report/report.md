@@ -31,7 +31,7 @@ Keywords: ETL, Data Stream, NiFi, NSA,
 
 ### Apache NiFi - Windows
 
-(Note: Assumes a recent verison of JAVA is installed)
+(Note: Assumes Windows OS and recent verison of JAVA is installed)
 
 **1**
 NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
@@ -83,7 +83,7 @@ http://localhost:9090/nifi
 ## Building a NiFi Flow
 
 **1** Add a TailFile Processor by clicking and draging the processor icon fron the top tray to add a processor.
-Type into the filter "tail" and select the TailFile processor and click "ADD"
+Type into the filter "tail" and select the TailFile processor and click ADD
 
 ![nifi_processor_tailfile](images/nifi_processor_tailfile.png)
 {#fig:nifi_processor_tailfile}
@@ -97,18 +97,44 @@ Click the properties tab and click the value for the property "File(s) to Tail"
 
 A box will appear to paste the location of the file to tail. For this example I will use a log file for a music player because it will provide a lot of data.
 
-Use / when inputing file path:
+Use / slash when inputing file path
 
 ```
 /AppData/Local/Amazon Music/Logs/AmazonMusic.log
 ```
 
-![nifi_tailfile_config](images/nifi_tailfile_config.png)
+![nifi_tailfile_config](images/nifi_tailfile_config.PNG)
 {#fig:nifi_tailfile_config}
 
 Click OK and then click APPLY
 
-**3** Add a 
+**3** Add a processor called SplitText
+
+Open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "failure" and "original"
+
+This provides direction if there is a failure at this step if a file can't be split any what to do with the original file after it is split. This flexiablity that NiFi provides requires extra configuration choices but provides the NiFi admin extensive control over every aspect of the flow being built.
+
+Click the properties tab and change the property Line Split Count to a value of "1"
+
+![nifi_splittext_config](images/nifi_splittext_config.PNG)
+{#fig:nifi_splittext_config}
+
+This will split each line of the log file into one row that will be processed independently in the rest of the flow.
+
+**4** Add a processor called RouteOnContent 
+
+Open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the box "unmatched" 
+
+Click the properties tab and change the property Match Requirement to "content must contain match" click OK
+
+Click the + in the upper right corner to add a property. 
+
+This property will be used to select a word or pharse from the rows of the log file. When the word is seen in the row the content of the row will be routed down stream. For this example we will use "AddToLibrary" when a user in the music player adds a track to the library
+We will use "ClientImplWinHTTP.cpp:525" which is the message in the log when a song plays in the music player
+
+After naming the new property click OK
+
+
 
 ### Log File Tail
 
