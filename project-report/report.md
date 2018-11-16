@@ -219,7 +219,7 @@ processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 
 ### Apache NiFi - Windows
 
-(Note: Assumes Windows OS and recent verison of JAVA is installed)
+(Note: Assumes Windows OS and recent verison of Java is installed)
 
 **1**
 NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
@@ -306,7 +306,11 @@ Open the configuration options for the processor and on the settings tab in the 
 
 ```
 NOTE
-This provides direction if there is a failure at this step if a file can't be split any what to do with the original file after it is split. This flexiablity that NiFi provides requires extra configuration choices but provides the NiFi admin extensive control over every aspect of the flow being built.
+This provides direction if there is a failure at this step if a 
+file can't be split any what to do with the original file after 
+it is split. This flexiablity that NiFi provides requires extra 
+configuration choices but provides the NiFi admin extensive 
+control over every aspect of the flow being built.
 ```
 
 Click the properties tab and change the property Line Split Count to a value of "1"
@@ -326,17 +330,23 @@ Click the + in the upper right corner to add a property.
 
 ```
 NOTE
-This property will be used to select a word or pharse from the rows of the log file. When the word is seen in the row the content of the row will be routed down stream. For this example we will use "AddToLibrary" when a user in the music player adds a song to the library
-We will use "ClientImplWinHTTP.cpp:525" which is the tag in the log when a song plays in the music player
+This property will be used to select a word or pharse from 
+the rows of the log file. When the word is seen in the row
+the content of the row will be routed down stream. For this
+example we will use "AddToLibrary" when a user in the music
+player adds a song to the library. We will 
+use "ClientImplWinHTTP.cpp:525" which is the tag in the log 
+when a song plays in the music player
 ```
 
 After naming the new property click OK
 
-Click on the value and use the NiFi expression language insert the tags we will use to select the rows for processing. 
+Click on the value and use the NiFi expression language insert the tags to use to select the rows for processing. 
 
 ```
 NOTE
-The NiFi experssion language can be found on the Apahce NiFi website [@fa18-523-56-www-nifi-expressionlanguageguide].
+The NiFi experssion language can be found on the Apahce NiFi 
+website[@fa18-523-56-www-nifi-expressionlanguageguide].
 ```
 
 We will use these tags for our new properties:
