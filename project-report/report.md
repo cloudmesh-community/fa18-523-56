@@ -234,7 +234,12 @@ NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page
 ``` 
 nifi-1.8.0-bin\nifi-1.8.0\conf
 ```
+
+![nifi_config](images/nifi_config.png)
+{#fig:nifi_config}
+
 Open nifi.properties file with a text editor and edit nifi.web.http.port= to the desired port
+
 
 ```
 # web properties #
@@ -251,9 +256,6 @@ nifi.web.max.header.size=16 KB
 nifi.web.proxy.context.path=
 nifi.web.proxy.host=
 ```
-
-![nifi_properties](images/nifi_properties.png)
-{#fig:nifi_properties}
 
 **4** Start up NiFi by navigating to
 
