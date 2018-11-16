@@ -131,9 +131,10 @@ as scale-up and scale-down [@www-nifi]
  
 ## NiFi Architecture
 
-+@fig:nifiarchitecture [fa18-523-56-www-nifi-homepagetechdoc] shows the main components in NiFi architecture.
+The NiFi homepage +@fig:nifiarchitecture  shows the main components in NiFi architecture.
 
-![NiFi Architecture](images/nifi_architecture.PNG){#fig:nifiarchitecture}
+![NiFi Architecture](images/nifi_architecture.PNG)
+{#fig:nifiarchitecture}[fa18-523-56-www-nifi-homepagetechdoc]
 
 From the top down, NiFi is web browser accessible by a NiFi hosted Web
 Server. NiFi processor operations are managed through the Flow
