@@ -105,11 +105,11 @@ as scale-up and scale-down
  
 ## NiFi Architecture
 
-+@fig:nifiarchitecture [fa18-523-56-www-nifi-homepagetechdoc] shows the main components in NiFi architecture.
+The NiFi homepage +@fig:nifiarchitecture[fa18-523-56-www-nifi-homepagetechdoc] shows the main components in NiFi architecture.
 
 ![NiFi Architecture](images/nifi_architecture.PNG)
 
-{#fig:nifiarchitecture}
+{#fig:nifiarchitecture} [fa18-523-56-www-nifi-homepagetechdoc]
 
 From the top down, NiFi is web browser accessible by a NiFi hosted Web
 Server. NiFi processor operations are managed through the Flow
@@ -212,7 +212,7 @@ processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 
 ![NiFi Cluster Architecture](images/nifi_clusters_architecture.PNG)
 
-{#fig:nificlusterarchitecture}
+{#fig:nificlusterarchitecture} [fa18-523-56-www-nifi-homepagetechdoc]
 
 ## Install NiFi
 
@@ -373,7 +373,17 @@ A window will appear to create the connection. Click ADD to connect the processo
 
 Connect the SplitText Processor to the RouteOnContent processsor
 
+Configure the connection in the column For Relationships, check the box "splits" 
 
+![nifi_connection1](images/nifi_connection1.PNG)
+{#fig:nifi_connection1}
+
+```
+NOTE
+This configuration for this connection will route the rows we selected 
+from the log file that were split out. Another path could be created to 
+handle the orginal files or the failures.
+```
 
 ## Linking NiFi Flow to Apache Kafka
 
