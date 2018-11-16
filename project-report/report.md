@@ -431,6 +431,9 @@ There is will statistics on each processor for data flowing through the flow.
 
 ## Linking NiFi Flow to Apache Kafka
 
+REVERSE Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
+
+
 ### 
 
 
