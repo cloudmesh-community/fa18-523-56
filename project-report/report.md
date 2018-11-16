@@ -384,6 +384,36 @@ This configuration for this connection will route the rows we selected
 from the log file that were split out. Another path could be created to 
 handle the orginal files or the failures.
 ```
+**6**
+
+Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
+
+
+The flow is now complete, it will read a log file, select and split inputs into rows based on parameters and routes the selected rows for output. But we have choosen to terminate the output at the RouteOnContent processor so that we run this simple flow first before connecting the flow to an external consumer. 
+
+![nifi_flow3](images/nifi_flow3.PNG)
+{#fig:nifi_flow3}
+
+Select all five components in the flow with the shift key held down, then right-click on any component and select Create template.
+
+Type a name for the template and click CREATE.
+
+Click and drag the Template icon fron the top tray to add to the workspace and a diologe box will ask what template to add and you can select the template that was just saved. 
+
+
+**7** To run our completed flow we need to turn on individual components or start then all at once. 
+
+Select all components with the shift key held down and click on the play button on the operate panel on the left side of the workspace.
+
+![nifi_operate](images/nifi_operate.PNG)
+{#fig:nifi_operate}
+
+After a few seconds right-click anywhere in the workspace and click refresh.
+
+There is will statistics on each processor for data flowing through the flow.
+
+![nifi_flow3](images/nifi_flow3.PNG)
+{#fig:nifi_flow3}
 
 ## Linking NiFi Flow to Apache Kafka
 
