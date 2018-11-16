@@ -412,8 +412,8 @@ After a few seconds right-click anywhere in the workspace and click refresh.
 
 There is will statistics on each processor for data flowing through the flow.
 
-![nifi_flow3](images/nifi_flow3.PNG)
-{#fig:nifi_flow3}
+![nifi_flow4](images/nifi_flow4.PNG)
+{#fig:nifi_flow4}
 
 ## Linking NiFi Flow to Apache Kafka
 
