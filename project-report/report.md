@@ -300,7 +300,7 @@ Click OK and then click APPLY
 
 Open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "failure" and "original"
 
-![nifi_splittext_config2](images/nifi_splittext2_config.PNG)
+![nifi_splittext_config2](images/nifi_splittext_config2.PNG)
 {#fig:nifi_splittext_config2}
 
 
