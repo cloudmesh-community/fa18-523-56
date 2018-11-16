@@ -361,58 +361,28 @@ We will use these tags for our new properties:
 
 Once all properties have been added click APPLY
 
+**5** Link the processes by clicking on the TailFile processor and dragging to the SplitText Processor
 
-### Log File Tail
+![nifi_flow1](images/nifi_flow1.PNG)
+{#fig:nifi_flow1}
+
+A window will appear to create the connection. Click ADD to connect the processors
+
+![nifi_flow1](images/nifi_flow2.PNG)
+{#fig:nifi_flow2}
+
+Connect the SplitText Processor to the RouteOnContent processsor
+
+
+
+## Linking NiFi Flow to Apache Kafka
 
 ### 
 
-## Processors
-
-### Setup Routing Processors
-
-### Setup Data Transformation Processors
-
-### Setup Database Access Processors
-
-### Setup System Integration Processors
-
-### AWS Processors
-
-## What is NIFI good for
-### source to analytic platform
-### 
-
-## What is NIFI not good for
-### multiple dataset joins
-### not good for aggregation  
 
 
 ## Alternatives to NIFI
 
-
-
-
-*Project Structure from piazza*
-
-## Abstract
-
-TBD
-
-## Introduction
-
-TBD
-
-## Requirements
-
-## Design 
-
-## Architecture
-
-## Dataset
-
-## Implementation
-
-## Benchmark
 
 ## Conclusion
 
