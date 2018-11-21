@@ -437,14 +437,17 @@ NiFi provides numerous endpoint processors pass data out of the NiFi flow to a n
 
 **2** Navigate to the configuration directory:
 
-
-![nifi_config](images/nifi_config.png)
-{#fig:nifi_config}
-
-Open nifi.properties file with a text editor and edit nifi.web.http.port= to the desired port
+Open nifi.properties file with a text editor and edit zookeeper.properties= to the desired port
 ```
 kafka_2.11-2.0.1\kafka_2.11-2.0.1\config
 ```
+
+```
+clientPort=2181
+clientPortAddress=localhost
+```
+
+Edit the 
 
 
 REVERSE Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
