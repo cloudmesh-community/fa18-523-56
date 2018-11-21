@@ -431,6 +431,22 @@ There is will statistics on each processor for data flowing through the flow.
 
 ## Linking NiFi Flow to Apache Kafka
 
+NiFi provides numerous endpoint processors pass data out of the NiFi flow to a new host. One example is Apache Kafka.
+
+**1** Download Kafka 
+
+**2** Navigate to the configuration directory:
+
+
+![nifi_config](images/nifi_config.png)
+{#fig:nifi_config}
+
+Open nifi.properties file with a text editor and edit nifi.web.http.port= to the desired port
+```
+kafka_2.11-2.0.1\kafka_2.11-2.0.1\config
+```
+
+
 REVERSE Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
 
 
