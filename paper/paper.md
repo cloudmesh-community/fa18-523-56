@@ -1,4 +1,4 @@
-# Apache NiFi :smiley: fa18-523-56  fa18-523-83
+# Apache NiFi :wave: fa18-523-56  fa18-523-83
  
 | Daniel Hinders , Nhi Tran
 | dhinders@iu.edu, nytran@iu.edu
