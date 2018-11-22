@@ -1,4 +1,4 @@
-# Apache NiFi :wave: fa18-523-56  fa18-523-83
+# Apache NiFi :wave: :exclamation: fa18-523-56  fa18-523-83
  
 | Daniel Hinders , Nhi Tran
 | dhinders@iu.edu, nytran@iu.edu
@@ -11,6 +11,10 @@
 Keywords: NiFi, NSA, Data Stream, ETL
  
 ---
+
+:o: figures not correct, see epub
+
+:o: are citations in images missing e.g. if so = plagiarizm. see our sample
 
 ## Apache NiFi Introduction
 
@@ -133,8 +137,7 @@ as scale-up and scale-down [@www-nifi]
 
 The NiFi homepage +@fig:nifiarchitecture  shows the main components in NiFi architecture.
 
-![NiFi Architecture](images/nifi_architecture.PNG)
-{#fig:nifiarchitecture}[fa18-523-56-www-nifi-homepagetechdoc]
+![NiFi Architecture [fa18-523-56-www-nifi-homepagetechdoc]](images/nifi_architecture.PNG){#fig:nifiarchitecture}
 
 From the top down, NiFi is web browser accessible by a NiFi hosted Web
 Server. NiFi processor operations are managed through the Flow
