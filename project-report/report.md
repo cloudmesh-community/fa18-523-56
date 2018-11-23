@@ -431,25 +431,31 @@ There is will statistics on each processor for data flowing through the flow.
 
 ## Linking NiFi Flow to Apache Kafka
 
-NiFi provides numerous endpoint processors pass data out of the NiFi flow to a new host. One example is Apache Kafka.
+NiFi provides numerous endpoint processors pass data out of the NiFi flow to a new host. One example is Apache Kafka, these directions for setting up Kafka are for Windows.
 
-**1** Download Kafka 
+**1** Start setting up Apache Kafka by download the lastest version of Kafka from the Apache Kafka website. The download will include Apache ZooKeeper. 
 
-**2** Navigate to the configuration directory:
+**2** Configure Zookeeper and Kafka by navigating to the configuration directory:
 
-Open nifi.properties file with a text editor and edit zookeeper.properties= to the desired port
 ```
 kafka_2.11-2.0.1\kafka_2.11-2.0.1\config
 ```
+Open zookeeper.properties file with a text editor and edit clientPort= to the desired port and the dataDir= to the desired folder for logs
 
 ```
 clientPort=2181
 clientPortAddress=localhost
 ```
+Open server.properties file with a text editor and edit zookeeper.connect= to the port selected for zookeeper and the dataDir= to the desired folder for logs
 
-Edit the 
+```
+zookeeper.connect=localhost:2181
+```
 
-
+**3** Start ZooKeeper by opening cmd prompt
+```
+\kafka_2.11-2.0.1\kafka_2.11-2.0.1\bin\windows
+```
 REVERSE Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
 
 
