@@ -50,7 +50,7 @@ released as an open source project to the public.
 
 > "NiFi was submitted to The Apache Software Foundation (ASF) in
 > November 2014 as part of the NSA Technology Transfer Program"
-> [@fa18-523-56-www-nifi-forbes].
+> [@fa18-523-56-www-nifi-forbes]. 
 
 Since then, Apache Foundation has used its volunteer organization to
 grow and mature the project [@fa18-523-56-www-nifi-issartetlsimple].
@@ -375,7 +375,7 @@ We will use these tags for our new properties:
 
 Once all properties have been added click APPLY
 
-**5** Link the processes by clicking on the TailFile processor and dragging to the SplitText Processor
+**5** Link the processes by hovering over the TailFile processor click on the arrow that appears and drag to connect it to the SplitText Processor
 
 ![nifi_flow1](images/nifi_flow1.PNG)
 {#fig:nifi_flow1}
@@ -482,30 +482,89 @@ Hit enter and the Kafka server will start up
 
 **5** Create two Kafka topics to so that we can put files data from the NiFi flow into the Kafka topics
 
-Set directory open a new cmd prompt and set directory to
+To add the addsong topic open a new cmd prompt and set directory to
 ```
 \kafka_2.11-2.0.1\kafka_2.11-2.0.1\bin\windows
 ```
 
 type:
 ```
-kafka-tpocs.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic 
+kafka-tpocs.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic addsong
+```
+[@fa18-523-56-www-nifi-kafkastartup]
+
+Hit enter and the new topic will be created
+
+![nifi_kafka_addtopic](images/nifi_kafka_addtopic.PNG)
+{#fig:nifi_kafka_addtopic}
+
+Repeat to add the  process type: 
+```
+kafka-tpocs.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic playsong
 ```
 
+**6** Add NiFi Processors to push data from the NiFi flow to Kafka
+
+Select all three processors with the shift key held down and click on the stop button on the operate panel on the left side of the workspace.
+
+![nifi_operate](images/nifi_operate.PNG)
+{#fig:nifi_operate}
+
+Add a PublishKafka processors to the flow. On the settings tab check the success check box.
+On the properties tab provide the port for the Kafka Broker.
+
+```
+localhost:2181
+```
+On the properties tab provide the Topic Name: addsong
+
+Repeat this process by adding another PublishKakfa processor and configure it the same except set the Topic Name: playsong
+
+
+![nifi_publish_kafka_config](images/nifi_publish_kafka_config.PNG)
+{#fig:nifi_publish_kafka_config}
+
+**6** Configure the RouteOnContent processor, on the settings tab in the options for Automatically Terminate Relationships uncheck the boxes "playsong" and "addsong" and click APPLY.
+
+![nifi_routeoncontent_config_kafka](images/nifi_routeoncontent_config_kafka.PNG)
+{#fig:nifi_routeoncontent_config_kafka}
 
 
 
+**7** Link the RouteOnContent processsor and a PublishKafka processor by hovering over the RouteOnContent process and click on the arrow that appears and drag to connect it to the PublishKafka Processor
+
+The Create Connection settings will appear, For Relationships, check the approporate topic being used by the PublishKafka processor that is linked, addsong, or playsong. Repeat the link from the RouteOnContent processor and the other PublishKafka processor and check the correct relationship.
+
+
+![nifi_kafka_linked](images/nifi_kafka_linked.PNG)
+{#fig:nifi_kafka_linked}
+
+```
+NOTE
+Hover over the yellow exclimation point on one of the PublishKafka processors. The error will say "'Relationship failure' is invalid because Relationship 'failure' is not connected to any component and is not auto-terminated" This is a good example of the robust validation in NiFi to ensure flows have the proper fail-over properties in place.
+
+![nifi_kafka_error](images/nifi_kafka_error.PNG)
+{#fig:nifi_kafka_error}
+```
+
+**8** To create a pathway for any data that fails in the PublishKafka processors hover hovering over the PublishKafka processor and click on the arrow that appears and drag to connect it with itself.
+
+The Create Connection settings will appear, For Relationships, check the failure box.
+
+![nifi_kafka_fail](images/nifi_kafka_fail.PNG)
+{#fig:nifi_kafka_fail}
+
+Repeat for the other PublishKafka processor.
+
+The flow is ready to run. 
+![nifi_nifi_kafka_finalflow_notrun](images/nifi_kafka_finalflow_notrun.PNG)
+{#fig:nifi_kafka_finalflow_notrun}
+
+
+Select all processors while holding down the shift key, right click on any of the processors and click start.
 
 
 
-
-
-
-
-
-
-
-REVERSE Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
 
 
 ### 
