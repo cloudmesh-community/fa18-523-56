@@ -452,10 +452,59 @@ Open server.properties file with a text editor and edit zookeeper.connect= to th
 zookeeper.connect=localhost:2181
 ```
 
-**3** Start ZooKeeper by opening cmd prompt
+**3** Start the ZooKeeper server by opening cmd prompt and set directory to
 ```
 \kafka_2.11-2.0.1\kafka_2.11-2.0.1\bin\windows
 ```
+
+type:
+```
+zookeeper-server-start.bat c:\(path)\kafka_22.11-2.01\config\zookeeper.properties
+```
+Hit enter and the ZooKeeper server will start up
+
+![nifi_zookeeper_startup](images/nifi_zookeeper_startup.PNG)
+{#fig:nifi_zookeeper_startup}
+
+**4** Start Kafka server by opening another cmd prompt and set directory to 
+```
+\kafka_2.11-2.0.1\kafka_2.11-2.0.1\bin\windows
+```
+type:
+```
+kafka-server-start.bat c:\(path)\kafka_22.11-2.01\config\server.properties
+```
+
+Hit enter and the Kafka server will start up
+
+![nifi_kafka_startup](images/nifi_kafka_startup.PNG)
+{#fig:nifi_kafka_startup}
+
+**5** Create two Kafka topics to so that we can put files data from the NiFi flow into the Kafka topics
+
+Set directory open a new cmd prompt and set directory to
+```
+\kafka_2.11-2.0.1\kafka_2.11-2.0.1\bin\windows
+```
+
+type:
+```
+kafka-tpocs.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 REVERSE Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
 
 
