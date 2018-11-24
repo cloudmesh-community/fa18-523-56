@@ -139,8 +139,7 @@ as scale-up and scale-down [@fa18-523-56-www-nifi-nifihomepage]
 +@fig:nifiarchitecture  shows the main components in NiFi architecture 
 [@fa18-523-56-www-nifi-homepagetechdoc].
 
-![NiFi Architecture [@fa18-523-56-www-nifi-homepagetechdoc]]
-(images/nifi_architecture.PNG){#fig:nifiarchitecture}
+![NiFi Architecture [@fa18-523-56-www-nifi-homepagetechdoc]](images/nifi_architecture.PNG){#fig:nifiarchitecture}
 
 From the top down, NiFi is web browser accessible by a NiFi hosted Web
 Server. NiFi processor operations are managed through the Flow
@@ -244,8 +243,7 @@ failover node [@fa18-523-56-www-nifi-homepagetechdoc]. Each of the nodes
 performs the same tasks but processes different dataset(s) 
 [@fa18-523-56-www-nifi-homepagetechdoc].
 
-![NiFi Cluster Architecture [@fa18-523-56-www-nifi-homepagetechdoc]]
-(images/nifi_clusters_architecture.PNG){#fig:nificlusterarchitecture}
+![NiFi Cluster Architecture [@fa18-523-56-www-nifi-homepagetechdoc]](images/nifi_clusters_architecture.PNG){#fig:nificlusterarchitecture}
 
 ## NiFi Download, Installing and Getting Started
 
@@ -291,8 +289,7 @@ digital transactions globally. +@fig:mastercardnififlow shows one of
 the use cases for NiFi at MasterCard, which is a file transfer mechanism 
 [@www-fa18-523-56-nifi-mastercard].
 
-![Mastercard NiFi Flow [@www-fa18-523-56-nifi-mastercard]]
-(images/mastercard_nifi_flow.PNG){#fig:mastercardnififlow}
+![Mastercard NiFi Flow [@www-fa18-523-56-nifi-mastercard]](images/mastercard_nifi_flow.PNG){#fig:mastercardnififlow}
 
 Batch processing is still a major part of MasterCard's ecosystem which
 requires multiple formatted flat files being created, transfered, and
@@ -331,8 +328,7 @@ Magellan, which involves six steps: (1) Data Acquisition, (2) Data Routing,
 (3) Streaming Processing, (4) Machine Learning, (5) Prediction Results, 
 and (6) Actionable Insights [@www-fa18-523-56-opentext-magellan-nifi].
 
-![Opentext Magellan NiFi Flow [@www-fa18-523-56-opentext-magellan-nifi]]
-(images/opentext_magellan_nifi_flow.PNG){#fig:opentextmagellannififlow}
+![Opentext Magellan NiFi Flow [@www-fa18-523-56-opentext-magellan-nifi]](images/opentext_magellan_nifi_flow.PNG){#fig:opentextmagellannififlow}
 
 NiFi is used during the first Data Acquisition steps to collect data
 from multiple sources such as smart devices, social media, online
