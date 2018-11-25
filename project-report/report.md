@@ -570,7 +570,11 @@ Select all processors while holding down the shift key, right click on any of th
 
 Data from the selected rows of the log files are flowing all they way through the NiFi flow to the Kafka cluster.
 
-### 
+## 
+
+link to section within paper
+
+[NiFi Architecture](#s-NiFi-Architecture)
 
 
 
