@@ -11,6 +11,7 @@
 
 * Learn about NIFI
 * Install NIFI and setup a data stream with various processors
+
 ---
 
 Keywords: ETL, Data Stream, NiFi, NSA, 
@@ -42,7 +43,6 @@ NiFi is not recommended for:
 * Complex Event Processing[@www-fa18-523-56-udemy-nifi]
 * Join/ Aggregated Functions[@www-fa18-523-56-udemy-nifi]
 
- 
 ## NiFi History
  
 NiFi was first developed at the National Security Agency but was
@@ -102,7 +102,7 @@ NiFi's main features are:
 as scale-up and scale-down
 [@fa18-523-56-www-nifi-homepagetechdoc].
 
- 
+
 ## NiFi Architecture
 
 The NiFi homepage +@fig:nifiarchitecture[fa18-523-56-www-nifi-homepagetechdoc] shows the main components in NiFi architecture.
