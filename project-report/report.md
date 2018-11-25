@@ -543,11 +543,14 @@ The Create Connection settings will appear, For Relationships, check the appropo
 
 ```
 NOTE
-Hover over the yellow exclimation point on one of the PublishKafka processors. The error will say "'Relationship failure' is invalid because Relationship 'failure' is not connected to any component and is not auto-terminated" This is a good example of the robust validation in NiFi to ensure flows have the proper fail-over properties in place.
-
+Hover over the yellow exclimation point on one of the PublishKafka processors. 
+The error will say "'Relationship failure' is invalid because Relationship 
+'failure' is not connected to any component and is not auto-terminated" This 
+is a good example of the robust validation in NiFi to ensure flows have the
+proper fail-over properties in place.
+```
 ![nifi_kafka_error](images/nifi_kafka_error.PNG)
 {#fig:nifi_kafka_error}
-```
 
 **8** To create a pathway for any data that fails in the PublishKafka processors hover hovering over the PublishKafka processor and click on the arrow that appears and drag to connect it with itself.
 
