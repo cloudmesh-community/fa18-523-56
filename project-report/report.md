@@ -565,8 +565,8 @@ The flow is ready to run.
 
 Select all processors while holding down the shift key, right click on any of the processors and click start.
 
-![nifi_nifi_kafka_finalflow_notrun](images/nifi_kafka_finalflow_notrun.PNG)
-{#fig:nifi_kafka_finalflow_notrun}
+![nifi_nifi_kafka_finalflow_run](images/nifi_kafka_finalflow_run.PNG)
+{#fig:nifi_kafka_finalflow_run}
 
 Data from the selected rows of the log files are flowing all they way through the NiFi flow to the Kafka cluster.
 
