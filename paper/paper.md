@@ -41,9 +41,9 @@ NiFi is not recommended for:
 * Join/ Aggregated Functions[@www-fa18-523-56-udemy-nifi]
 
 
-## Big Data Challanges and NiFi  
+## Big Data Challenges and NiFi  
 
-Big data can be fantastic source of information for decision making and business 
+Big data can be a fantastic source of information for decision making and business 
 process definition and actualization. However, the complexity of individual 
 datasets, the variability of dataset structure and composition, and the sheer 
 volume of data are challenges to truly leveraging big data in the real world. 
@@ -57,17 +57,17 @@ analytics or visualization tools to understand the data and use it to make
 decisions and learn things. Furthermore, productization and dissemination 
 of that data is fairly straightforward.
  
-But this is rarely where the real use case for bigdata solutions ends.
+But this is rarely where the real use case for big data solutions ends.
 The bigger challenge is dealing with disparate datasets and connecting
 points of information in a multi-sourced dataset environment.
 Consolidation of disparate data is therefore extremely important.
-Furthermore leveraging the the correctly sourced data out of
-consolidated datastore environment and then loaded this data into the
+Furthermore leveraging the correctly sourced data out of
+consolidated data store environment and then loaded this data into the
 correct product is challenging.
  
 Apache NiFi is an application that seeks to address this big data
-problem. NiFi is tool that has emerged from a unique background as
-tool created by the National Security Agency then curated and improved
+problem. NiFi is a tool that has emerged from a unique background as a tool 
+created by the National Security Agency then curated and improved
 by the open source community.
  
 ## NiFi History
@@ -85,20 +85,20 @@ grow and mature the project [@fa18-523-56-www-nifi-issartetlsimple].
 ## NiFi Features
  
 NiFi incorporates a straightforward User Interface (UI) to engineer
-traceable data provence with configurable components. NiFi offers up
+traceable data provenance with configurable components. NiFi offers up
 the ability to custom build processors and incorporate them into a
-highly customizable flows. Through
+highly customizable flow. Through
 
 > "data routing, transformation, and system mediation logic"
 > [@fa18-523-56-www-nifi-nifihomepage],
 
-NiFi seeks to automate data flows in a big data environment and gives
+NiFi seeks to automate data flow in a big data environment and gives
 architects the ability to keep data flowing between evolving systems
-quickly. Amongst a host of features NiFi offers, one sticks out as
+quickly. Amongst a host of features, NiFi offers, one sticks out as
 particularly important because of the challenges associated with what
 the feature addresses: data errors, data inconsistency, and data
-irregularity handling. NiFi provides users the ability to incorporate
-in the flow processes to catch these non-happy path realities in big
+irregularity handling. NiFi provides users with the ability to incorporate
+in the flow, processes to catch these non-happy path realities in big
 data. As new situations are discovered, a user can quickly
 build *if-then* forks in the process to catch, store, or resolve the
 data issues.
@@ -111,9 +111,9 @@ NiFi's main features are:
 [@fa18-523-56-www-nifi-homepagetechdoc]
 * *Web-based user interface*: easy to use web-based GUI with drag and
   drop features that allows users to build, schedule, control, and
-  monitor dataflow[@fa18-523-56-www-nifi-nifihomepage]
+  monitor data flow[@fa18-523-56-www-nifi-nifihomepage]
 [@fa18-523-56-www-nifi-homepagetechdoc]
-* *Provenance*: provide ability to track data flows through the
+* *Provenance*: provide the ability to track data flows through the
   systems with audit trail and traceability functionalities 
   [@fa18-523-56-www-nifi-nifihomepage]
 [@fa18-523-56-www-nifi-homepagetechdoc]
@@ -162,7 +162,7 @@ and managed through the Flow Controller
 
 ### FlowFile Repository
 
-Files in an active NiFi flow are tracked in a write ahead log so that
+Files in an active NiFi flow are tracked in a write-ahead log so that
 as data moved through the flow NiFi can keep track of what is known
 about files as they pass
 through[@fa18-523-56-www-nifi-homepagetechdoc].
@@ -202,7 +202,7 @@ service as well [@fa18-523-56-www-nifi-creatingprocessors].
   * Similar input type processors: Consume, Extract, Fetch, Listen, etc.
 
 Nifi provides dozens of *Get* processor options and many other similar
-input type processors. A *Get* processer is commonly used to pick up a
+input type processors. A *Get* processor is commonly used to pick up a
 file or data and launch a FlowFile. The *Get* file processer setup
 typically gives configuration options to point to a host, set timing
 increments for polling and timeouts, set proxy settings, and more
@@ -217,7 +217,7 @@ increments for polling and timeouts, set proxy settings, and more
 Once data is in the flow, NiFi provides dozens of processors to
 manipulate or transform data. The *Convert* processors can be
 configured to the expected schema or type from the *Get* processor and
-tranform, edit, thin, enrich, or many other functions on the data in
+transform, edit, thin, enrich, or many other functions on the data in
 the flow [@fa18-523-56-www-nifi-homepagetechdoc].
 
 * **Put**
@@ -238,7 +238,7 @@ configuration options based on the destination type
 
 NiFi can also be integrated with ZooKeeper to operate within a
 cluster. +@fig:nificlusterarchitecture shows how ZooKeeper manages
-NiFi's nodes by determining primary node, Zookeeper Coordinator, and
+NiFi's nodes by determining the primary node, Zookeeper Coordinator, and
 failover node [@fa18-523-56-www-nifi-homepagetechdoc]. Each of the nodes 
 performs the same tasks but processes different dataset(s) 
 [@fa18-523-56-www-nifi-homepagetechdoc].
@@ -259,7 +259,7 @@ within the installed folder [@fa18-523-56-nifi-installation-page].
 
 *For Linux/Mac OS X Users*
 
-Use Terminal to run `bin/nifi.sh`. Application will run and will be
+Use Terminal to run `bin/nifi.sh`. An application will run and will be
 shutdown when the command is terminated 
 [@fa18-523-56-nifi-installation-page].
 
@@ -267,15 +267,15 @@ shutdown when the command is terminated
 
 To install NiFi as a Service, run the command `bin/nifi.sh install
 <service_name>`. Without specifying specific `<service_name>`, nifi
-service name will be defaulted to *nifi* 
+service name will default to *nifi* 
 [@fa18-523-56-nifi-installation-page].
 
 To start NiFi service after installation, run sudo `service
 <service_name> start` . To stop, run `sudo service <service_name>
 stop` [@fa18-523-56-nifi-installation-page].
 
-Once NiFi has been started, the GUI can be accessed using web browser
-via <http://localhost:8080/nifi> . The port and host name can be
+Once NiFi has been started, the GUI can be accessed using a web browser
+via <http://localhost:8080/nifi> . The port and hostname can be
 configured and changed depending on which server or setting in
 `conf/nifi.properties` is used [@fa18-523-56-nifi-installation-page].
 
@@ -292,38 +292,38 @@ the use cases for NiFi at MasterCard, which is a file transfer mechanism
 ![Mastercard NiFi Flow [@www-fa18-523-56-nifi-mastercard]](images/mastercard_nifi_flow.PNG){#fig:mastercardnififlow}
 
 Batch processing is still a major part of MasterCard's ecosystem which
-requires multiple formatted flat files being created, transfered, and
+requires multiple formatted flat files being created, transferred, and
 picked up by applications [@www-fa18-523-56-nifi-mastercard].
 MasterCard uses NiFi's file transfer features to convert files source
-into data stream and perform specific workflow to direct data into
+into data stream(s) and perform specific workflow to direct data into
 various target systems [@www-fa18-523-56-nifi-mastercard]. Target
 system could be a messaging systems, Hadoop landing zone, databases.
-NiFi can also feeds data and trigger a map-reduce or spark jobs after
+NiFi can also feed data and trigger a map-reduce or spark jobs after
 transfer [@www-fa18-523-56-nifi-mastercard].
 
-MasterCard provided a demo which demonstrate the use case of them
-using NiFi to call a web services from a file transfer controller, the
+MasterCard provided a demo which demonstrates the use case of them
+using NiFi to call web services from a file transfer controller, the
 data flow then has a mechanism to determine which process groups NiFi
 should distribute data into based on file name/ format logic
-[@www-fa18-523-56-nifi-mastercard]. The process groups contains
-workflow that can either feeds data to a diffrerent system, to Hadoop,
+[@www-fa18-523-56-nifi-mastercard]. The process groups contain
+workflows that can either feed data to a different system, to Hadoop,
 or to Postgres database [@www-fa18-523-56-nifi-mastercard]. Once each
-process flow are completed, the process status will be captured and
+process flow is completed, the process status will be captured and
 reported into a Status Handler process
 [@www-fa18-523-56-nifi-mastercard].
 
 
 ### Streaming Analytics Solutions at OpenText Magellan
 
-OpenText Magellan is an artifical intelligence product that supports
-machine learning and advance analytics. At OpenText Magellan
+OpenText Magellan is an artificial intelligence product that supports
+machine learning and advanced analytics. At OpenText Magellan
 organization, NiFi was utilized as part of their streaming analytics
-infrastrusture to allow continuous process and real-time analysis
+infrastructure to allow continuous process and real-time analysis
 [@www-fa18-523-56-opentext-magellan-nifi]. OpenText Magellan's
-infrastructure involves source applications, NiFi, Apacha Spark,
+infrastructure involves source applications, NiFi, Apache Spark,
 Python, R, Scala, and other Magellan BI and Reporting tools
 [@www-fa18-523-56-opentext-magellan-nifi]. +@fig:opentextmagellannififlow 
-shows a typical process of streaming analytics process at Opentext 
+shows a typical process of streaming analytics process at OpenText 
 Magellan, which involves six steps: (1) Data Acquisition, (2) Data Routing,
 (3) Streaming Processing, (4) Machine Learning, (5) Prediction Results, 
 and (6) Actionable Insights [@www-fa18-523-56-opentext-magellan-nifi].
@@ -334,10 +334,10 @@ NiFi is used during the first Data Acquisition steps to collect data
 from multiple sources such as smart devices, social media, online
 transactions, and log monitoring [@www-fa18-523-56-opentext-magellan-nifi]. 
 The real-time data can then be combined with other historical data or 
-other data sources before being feed into downstream system
+other data sources before being feed into a downstream system
 [@www-fa18-523-56-opentext-magellan-nifi]. Data is then being streamed
 by Kafka in Data Routing step and then being read and applied business
-rules by Spark Streaming API before it is being store in data lake
+rules by Spark Streaming API before it is being stored in a data lake
 [@www-fa18-523-56-opentext-magellan-nifi]. Spark Streaming API will
 apply machine learning prediction model in Machine Learning step and
 then being saved in Prediction Results
@@ -345,13 +345,13 @@ then being saved in Prediction Results
 organizations can take quick decisions to provide business benefits
 and insights [@www-fa18-523-56-opentext-magellan-nifi].
 
-As a result, the organization was able to create a low cost solutions
+As a result, the organization was able to create low-cost solutions
 that has the flexibility and extensibility of open source software.
 
 ### Social Competitive Intelligence Application at Compose
 
 Compose is an IBM company launched in 2010 that offer databases as a
-service on the cloud that are production ready and are easy to manage.
+service on the cloud that is production ready and is easy to manage.
 NiFi in being used in Compose as part of their Competitive
 Intelligence infrastructure that involves other software such as
 Twitter, IBM Watson, Redis, and MongoDB
@@ -366,7 +366,7 @@ reporting purpose and at the same time store all data in MongoDB
 Ford is an automobiles manufacturing company in the United States.
 Being a large company, data are stored and generated constantly in
 many applications within the enterprise such as assembly plants data,
-vehicle sensor data, dealership data, vehicle dianogstic data, and so
+vehicle sensor data, dealership data, vehicle diagnostic data, and so
 on [@www-fa18-523-56-ford-nifi]. Ford came up with a solution called
 Real Time Streaming Architecture (RTSA) to allow data being flow
 between systems in real-time with proper data governance
@@ -374,7 +374,7 @@ between systems in real-time with proper data governance
 
 Ford's data are being sourced from Open XC which contains vehicle and
 phone application data into a private cloud via Cloud Foundry
-Websocket or Event Hub [@www-fa18-523-56-ford-nifi]. Data from
+WebSocket or Event Hub [@www-fa18-523-56-ford-nifi]. Data from
 Websocket are streamed via Kafka into a cloud-based NiFi cluster
 together with the Event Hub data [@www-fa18-523-56-ford-nifi]. From
 the cloud-based NiFi Cluster, the combined data then flows to a
@@ -386,15 +386,14 @@ to Kafka for downstream system distributions or being stored in Hadoop
 
 * Nhi Tran fa18-523-83
 
-Use Case, NiFi Architecture image, NiFi Cluster Architecture and image, 
+Use Case, NiFi Architecture image, NiFi Cluster Architecture's image, 
 NiFi Download Installing and Getting Started
 
 * Daniel Hinders fa18-523-56
 
-NiFi Introduction, Big Data Challanges and NiFi, NiFi History, 
+NiFi Introduction, Big Data Challenges and NiFi, NiFi History, 
 NiFi Architecture
 
 * Both
 
 NiFi Features
-
