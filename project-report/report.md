@@ -320,13 +320,13 @@ Open the configuration options for the processor and on the settings tab in the 
 {#fig:nifi_splittext_config2}
 
 
-```
-**NOTE
+```bash
+NOTE
 This provides direction if there is a failure at this step if a 
 file can't be split any what to do with the original file after 
 it is split. This flexiablity that NiFi provides requires extra 
 configuration choices but provides the NiFi admin extensive 
-control over every aspect of the flow being built.**
+control over every aspect of the flow being built.
 ```
 
 Click the properties tab and change the property Line Split Count to a value of "1"
