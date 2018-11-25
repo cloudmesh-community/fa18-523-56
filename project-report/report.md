@@ -320,7 +320,7 @@ Open the configuration options for the processor and on the settings tab in the 
 {#fig:nifi_splittext_config2}
 
 
-```bash
+```
 NOTE
 This provides direction if there is a failure at this step if a 
 file can't be split any what to do with the original file after 
