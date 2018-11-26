@@ -36,9 +36,9 @@ NiFi is a tool for:
 
 NiFi is not recommended for:
 
-* Distributed Computation[@www-fa18-523-56-udemy-nifi]
-* Complex Event Processing[@www-fa18-523-56-udemy-nifi]
-* Join/ Aggregated Functions[@www-fa18-523-56-udemy-nifi]
+* Distributed Computation [@www-fa18-523-56-udemy-nifi]
+* Complex Event Processing [@www-fa18-523-56-udemy-nifi]
+* Join/ Aggregated Functions [@www-fa18-523-56-udemy-nifi]
 
 
 ## Big Data Challenges and NiFi  
@@ -108,30 +108,30 @@ NiFi's main features are:
 * *Guaranteed delivery*: use purpose-built persistent write-ahead log
   and content repository to ensure guaranteed delivery in an effective
   way [@fa18-523-56-www-nifi-nifihomepage]
-[@fa18-523-56-www-nifi-homepagetechdoc]
+  [@fa18-523-56-www-nifi-homepagetechdoc]
 * *Web-based user interface*: easy to use web-based GUI with drag and
   drop features that allows users to build, schedule, control, and
   monitor data flow[@fa18-523-56-www-nifi-nifihomepage]
-[@fa18-523-56-www-nifi-homepagetechdoc]
+  [@fa18-523-56-www-nifi-homepagetechdoc]
 * *Provenance*: provide the ability to track data flows through the
   systems with audit trail and traceability functionalities 
   [@fa18-523-56-www-nifi-nifihomepage]
-[@fa18-523-56-www-nifi-homepagetechdoc]
+  [@fa18-523-56-www-nifi-homepagetechdoc]
 * *Queue Prioritization*: provide the ability to configure and
   prioritize job flow and determine the order of events
- [@fa18-523-56-www-nifi-nifihomepage]
-[@fa18-523-56-www-nifi-homepagetechdoc]
+  [@fa18-523-56-www-nifi-nifihomepage]
+  [@fa18-523-56-www-nifi-homepagetechdoc]
 * *Secure*: provide and support multiple security protocols and
   encryptions, as well as authorization management 
   [@fa18-523-56-www-nifi-nifihomepage]
   [@fa18-523-56-www-nifi-homepagetechdoc]
 * *Extensibility*: provide flexibility by allowing pre-built and
   built-your-own extension the be integrated 
-[@fa18-523-56-www-nifi-nifihomepage]
-[@fa18-523-56-www-nifi-homepagetechdoc]
+  [@fa18-523-56-www-nifi-nifihomepage]
+  [@fa18-523-56-www-nifi-homepagetechdoc]
 * *Scalability*: supports scale-out by clustering architecture as well
-as scale-up and scale-down [@fa18-523-56-www-nifi-nifihomepage]
-[@fa18-523-56-www-nifi-homepagetechdoc]
+  as scale-up and scale-down [@fa18-523-56-www-nifi-nifihomepage]
+  [@fa18-523-56-www-nifi-homepagetechdoc]
 
  
 ## NiFi Architecture
@@ -198,7 +198,7 @@ service as well [@fa18-523-56-www-nifi-creatingprocessors].
 * **Get**
 
   * Examples: GetFTP, GetMongo, GetTCP, etc. 
-  [@fa18-523-56-www-nifi-homepagetechdoc]
+    [@fa18-523-56-www-nifi-homepagetechdoc]
   * Similar input type processors: Consume, Extract, Fetch, Listen, etc.
 
 Nifi provides dozens of *Get* processor options and many other similar
@@ -211,7 +211,7 @@ increments for polling and timeouts, set proxy settings, and more
 * **Convert**
 
   * Examples: ConvertJSONToSQL, Convert Record, ConvertExceltoCSVProcessor, 
-  etc. [@fa18-523-56-www-nifi-homepagetechdoc]
+    etc. [@fa18-523-56-www-nifi-homepagetechdoc]
   * Similar transformation type processors: Evaluate, Merge, Split, etc. 
 
 Once data is in the flow, NiFi provides dozens of processors to
@@ -223,7 +223,7 @@ the flow [@fa18-523-56-www-nifi-homepagetechdoc].
 * **Put**
 
   * Examples: PutFile, PutFTP, PutSQL, PutElasticSearch, PutAzureBlobStorage, 
-  etc. [@fa18-523-56-www-nifi-homepagetechdoc]
+    etc. [@fa18-523-56-www-nifi-homepagetechdoc]
   * Similar output type processors: Publish, etc. 
 
 A critical part of a flow in NiFi is pushing the right data out of the
