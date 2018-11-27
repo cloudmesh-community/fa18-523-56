@@ -165,7 +165,7 @@ and managed through the Flow Controller
 Files in an active NiFi flow are tracked in a write-ahead log so that
 as data moved through the flow NiFi can keep track of what is known
 about files as they pass
-through[@fa18-523-56-www-nifi-homepagetechdoc].
+through [@fa18-523-56-www-nifi-homepagetechdoc].
 
 ### Content Repository
 
