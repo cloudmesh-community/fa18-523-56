@@ -224,9 +224,9 @@ processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 **1**
 NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
 
-![nifi_download](images/nifi_download.png)
+![nifi_download](images/nifi_download.png){#fig:nifi_download}
 
-{#fig:nifi_download}
+:o: picture quality bad, convert to ascii, no need for image use text
 
 **2** Unzip the install package.
 
