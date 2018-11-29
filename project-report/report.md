@@ -108,8 +108,7 @@ as scale-up and scale-down
 
 The NiFi homepage +@fig:nifiarchitecture[fa18-523-56-www-nifi-homepagetechdoc] shows the main components in NiFi architecture.
 
-![NiFi Architecture [@fa18-523-56-www-nifi-homepagetechdoc]]
-(images/nifi_architecture.PNG){#fig:nifiarchitecture}
+![NiFi Architecture [@fa18-523-56-www-nifi-homepagetechdoc]](images/nifi_architecture.PNG){#fig:nifiarchitecture}
 
 From the top down, NiFi is web browser accessible by a NiFi hosted Web
 Server. NiFi processor operations are managed through the Flow
@@ -213,8 +212,7 @@ NiFi's nodes by determining the primary node, Zookeeper Coordinator, and
 failover node . Each of the nodes performs the same tasks but
 processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 
-![NiFi Cluster Architecture [@fa18-523-56-www-nifi-homepagetechdoc]]
-(images/nifi_clusters_architecture.PNG){#fig:nificlusterarchitecture}
+![NiFi Cluster Architecture [@fa18-523-56-www-nifi-homepagetechdoc]](images/nifi_clusters_architecture.PNG){#fig:nificlusterarchitecture}
 
 ## Install NiFi
 
@@ -237,8 +235,7 @@ NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page
 nifi-1.8.0-bin\nifi-1.8.0\conf
 ```
 
-![nifi_config](images/nifi_config.png)
-{#fig:nifi_config}
+![nifi_config](images/nifi_config.png){#fig:nifi_config}
 
 Open nifi.properties file with a text editor and edit nifi.web.http.port= to the desired port
 
@@ -281,21 +278,18 @@ Wait about 5 minutes for NiFi to load
 http://localhost:9090/nifi
 ```
 
-![nifi_nifihome](images/nifi_nifihome.png)
-{#fig:nifi_nifihome}
+![nifi_nifihome](images/nifi_nifihome.png){#fig:nifi_nifihome}
 
 ## Building a NiFi Flow
 
 **1** Add a TailFile Processor by clicking and draging the processor icon fron the top tray to add a processor.
 Type into the filter "tail" and select the TailFile processor and click ADD
 
-![nifi_processor_tailfile](images/nifi_processor_tailfile.png)
-{#fig:nifi_processor_tailfile}
+![nifi_processor_tailfile](images/nifi_processor_tailfile.png){#fig:nifi_processor_tailfile}
 
 **2** Configure the TailFile Processor by right-clicking on the process and click configure.
 
-![nifi_processor_config](images/nifi_processor_config.png)
-{#fig:nifi_processor_config}
+![nifi_processor_config](images/nifi_processor_config.png){#fig:nifi_processor_config}
 
 Click the properties tab and click the value for the property "File(s) to Tail"
 
@@ -316,8 +310,7 @@ Click OK and then click APPLY
 
 Open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "failure" and "original"
 
-![nifi_splittext_config2](images/nifi_splittext_config2.PNG)
-{#fig:nifi_splittext_config2}
+![nifi_splittext_config2](images/nifi_splittext_config2.PNG){#fig:nifi_splittext_config2}
 
 
 ```
@@ -331,8 +324,7 @@ control over every aspect of the flow being built.
 
 Click the properties tab and change the property Line Split Count to a value of "1"
 
-![nifi_splittext_config](images/nifi_splittext_config.PNG)
-{#fig:nifi_splittext_config}
+![nifi_splittext_config](images/nifi_splittext_config.PNG){#fig:nifi_splittext_config}
 
 This will split each line of the log file into one row that will be processed independently in the rest of the flow.
 
@@ -372,27 +364,23 @@ We will use these tags for our new properties:
 \bClientImplWinHTTP.cpp:525\b
 ```
 
-![nifi_routeoncontent_config](images/nifi_routeoncontent_config.PNG)
-{#fig:nifi_routeoncontent_config}
+![nifi_routeoncontent_config](images/nifi_routeoncontent_config.PNG){#fig:nifi_routeoncontent_config}
 
 Once all properties have been added click APPLY
 
 **5** Link the processes by hovering over the TailFile processor click on the arrow that appears and drag to connect it to the SplitText Processor
 
-![nifi_flow1](images/nifi_flow1.PNG)
-{#fig:nifi_flow1}
+![nifi_flow1](images/nifi_flow1.PNG){#fig:nifi_flow1}
 
 A window will appear to create the connection. Click ADD to connect the processors
 
-![nifi_flow1](images/nifi_flow2.PNG)
-{#fig:nifi_flow2}
+![nifi_flow1](images/nifi_flow2.PNG){#fig:nifi_flow2}
 
 Connect the SplitText Processor to the RouteOnContent processsor
 
 Configure the connection in the column For Relationships, check the box "splits" 
 
-![nifi_connection1](images/nifi_connection1.PNG)
-{#fig:nifi_connection1}
+![nifi_connection1](images/nifi_connection1.PNG){#fig:nifi_connection1}
 
 ```
 NOTE
@@ -407,8 +395,7 @@ Right click on the RouteOnContent processor to open the configuration options fo
 
 The flow is now complete, it will read a log file, select and split inputs into rows based on parameters and routes the selected rows for output. But we have choosen to terminate the output at the RouteOnContent processor so that we run this simple flow first before connecting the flow to an external consumer. 
 
-![nifi_flow3](images/nifi_flow3.PNG)
-{#fig:nifi_flow3}
+![nifi_flow3](images/nifi_flow3.PNG){#fig:nifi_flow3}
 
 Select all five components in the flow with the shift key held down, then right-click on any component and select Create template.
 
@@ -421,15 +408,13 @@ Click and drag the Template icon fron the top tray to add to the workspace and a
 
 Select all components with the shift key held down and click on the play button on the operate panel on the left side of the workspace.
 
-![nifi_operate](images/nifi_operate.PNG)
-{#fig:nifi_operate}
+![nifi_operate](images/nifi_operate.PNG){#fig:nifi_operate}
 
 After a few seconds right-click anywhere in the workspace and click refresh.
 
 There is will statistics on each processor for data flowing through the flow.
 
-![nifi_flow4](images/nifi_flow4.PNG)
-{#fig:nifi_flow4}
+![nifi_flow4](images/nifi_flow4.PNG){#fig:nifi_flow4}
 
 ## Linking NiFi Flow to Apache Kafka
 
@@ -465,8 +450,7 @@ zookeeper-server-start.bat c:\(path)\kafka_22.11-2.01\config\zookeeper.propertie
 ```
 Hit enter and the ZooKeeper server will start up
 
-![nifi_zookeeper_startup](images/nifi_zookeeper_startup.PNG)
-{#fig:nifi_zookeeper_startup}
+![nifi_zookeeper_startup](images/nifi_zookeeper_startup.PNG){#fig:nifi_zookeeper_startup}
 
 **4** Start Kafka server by opening another cmd prompt and set directory to 
 ```
@@ -479,8 +463,7 @@ kafka-server-start.bat c:\(path)\kafka_22.11-2.01\config\server.properties
 
 Hit enter and the Kafka server will start up
 
-![nifi_kafka_startup](images/nifi_kafka_startup.PNG)
-{#fig:nifi_kafka_startup}
+![nifi_kafka_startup](images/nifi_kafka_startup.PNG){#fig:nifi_kafka_startup}
 
 **5** Create two Kafka topics to so that we can put files data from the NiFi flow into the Kafka topics
 
@@ -497,8 +480,7 @@ kafka-tpocs.bat --create --zookeeper localhost:2181 --replication-factor 1 --par
 
 Hit enter and the new topic will be created
 
-![nifi_kafka_addtopic](images/nifi_kafka_addtopic.PNG)
-{#fig:nifi_kafka_addtopic}
+![nifi_kafka_addtopic](images/nifi_kafka_addtopic.PNG){#fig:nifi_kafka_addtopic}
 
 Repeat to add the  process type: 
 ```
@@ -509,8 +491,7 @@ kafka-tpocs.bat --create --zookeeper localhost:2181 --replication-factor 1 --par
 
 Select all three processors with the shift key held down and click on the stop button on the operate panel on the left side of the workspace.
 
-![nifi_operate](images/nifi_operate.PNG)
-{#fig:nifi_operate}
+![nifi_operate](images/nifi_operate.PNG){#fig:nifi_operate}
 
 Add a PublishKafka processors to the flow. On the settings tab check the success check box.
 On the properties tab provide the port for the Kafka Broker.
@@ -523,13 +504,11 @@ On the properties tab provide the Topic Name: addsong
 Repeat this process by adding another PublishKakfa processor and configure it the same except set the Topic Name: playsong
 
 
-![nifi_publish_kafka_config](images/nifi_publish_kafka_config.PNG)
-{#fig:nifi_publish_kafka_config}
+![nifi_publish_kafka_config](images/nifi_publish_kafka_config.PNG){#fig:nifi_publish_kafka_config}
 
 **6** Configure the RouteOnContent processor, on the settings tab in the options for Automatically Terminate Relationships uncheck the boxes "playsong" and "addsong" and click APPLY.
 
-![nifi_routeoncontent_config_kafka](images/nifi_routeoncontent_config_kafka.PNG)
-{#fig:nifi_routeoncontent_config_kafka}
+![nifi_routeoncontent_config_kafka](images/nifi_routeoncontent_config_kafka.PNG){#fig:nifi_routeoncontent_config_kafka}
 
 
 
@@ -538,8 +517,7 @@ Repeat this process by adding another PublishKakfa processor and configure it th
 The Create Connection settings will appear, For Relationships, check the approporate topic being used by the PublishKafka processor that is linked, addsong, or playsong. Repeat the link from the RouteOnContent processor and the other PublishKafka processor and check the correct relationship.
 
 
-![nifi_kafka_linked](images/nifi_kafka_linked.PNG)
-{#fig:nifi_kafka_linked}
+![nifi_kafka_linked](images/nifi_kafka_linked.PNG){#fig:nifi_kafka_linked}
 
 ```
 NOTE
@@ -549,27 +527,23 @@ The error will say "'Relationship failure' is invalid because Relationship
 is a good example of the robust validation in NiFi to ensure flows have the
 proper fail-over properties in place.
 ```
-![nifi_kafka_error](images/nifi_kafka_error.PNG)
-{#fig:nifi_kafka_error}
+![nifi_kafka_error](images/nifi_kafka_error.PNG){#fig:nifi_kafka_error}
 
 **8** To create a pathway for any data that fails in the PublishKafka processors hover hovering over the PublishKafka processor and click on the arrow that appears and drag to connect it with itself.
 
 The Create Connection settings will appear, For Relationships, check the failure box.
 
-![nifi_kafka_fail](images/nifi_kafka_fail.PNG)
-{#fig:nifi_kafka_fail}
+![nifi_kafka_fail](images/nifi_kafka_fail.PNG){#fig:nifi_kafka_fail}
 
 Repeat for the other PublishKafka processor.
 
 The flow is ready to run. 
-![nifi_nifi_kafka_finalflow_notrun](images/nifi_kafka_finalflow_notrun.PNG)
-{#fig:nifi_kafka_finalflow_notrun}
+![nifi_nifi_kafka_finalflow_notrun](images/nifi_kafka_finalflow_notrun.PNG){#fig:nifi_kafka_finalflow_notrun}
 
 
 Select all processors while holding down the shift key, right click on any of the processors and click start.
 
-![nifi_nifi_kafka_finalflow_run](images/nifi_kafka_finalflow_run.PNG)
-{#fig:nifi_kafka_finalflow_run}
+![nifi_nifi_kafka_finalflow_run](images/nifi_kafka_finalflow_run.PNG){#fig:nifi_kafka_finalflow_run}
 
 Data from the selected rows of the log files are flowing all they way through the NiFi flow to the Kafka cluster.
 
