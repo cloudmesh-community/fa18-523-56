@@ -23,22 +23,20 @@ customize the flow [@fa18-523-56-www-nifi-issartetlsimple]. This
 flexibility and usability is key to NiFi's value in a big data world
 where stovepipes and inflexibility are frequently challenges.
 
-NiFi is a tool for:
+As pointed out in [@www-fa18-523-56-udemy-nifi] NiFi is a tool for:
 
-* Moving data between systems, including modern systems such as social
-  media sources, AWS cloud server, Hadoop, MongoDB, and so on 
-  [@www-fa18-523-56-udemy-nifi]
-* Delivering data to analytics platforms[@www-fa18-523-56-udemy-nifi]
-* Format Conversion, extracting/parsing data[@www-fa18-523-56-udemy-nifi]
-* Data or files routing decisions[@www-fa18-523-56-udemy-nifi]
-* Real-time data streaming[@www-fa18-523-56-udemy-nifi]
+> * Moving data between systems, including modern systems such as social
+>  media sources, AWS cloud server, Hadoop, MongoDB, and so on 
+> * Delivering data to analytics platforms
+> * Format Conversion, extracting/parsing data
+> * Data or files routing decisions
+> * Real-time data streaming
 
+> NiFi is not recommended for:
 
-NiFi is not recommended for:
-
-* Distributed Computation [@www-fa18-523-56-udemy-nifi]
-* Complex Event Processing [@www-fa18-523-56-udemy-nifi]
-* Join/ Aggregated Functions [@www-fa18-523-56-udemy-nifi]
+> * Distributed Computation
+> * Complex Event Processing
+> * Join/ Aggregated Functions
 
 
 ## Big Data Challenges and NiFi  
