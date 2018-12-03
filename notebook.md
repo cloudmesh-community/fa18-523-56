@@ -84,6 +84,45 @@
 * https://piazza.com/class/jl6rxey6w413gi?cid=250
 
 
+## 
+
+link to section within paper
+
+[NiFi Architecture](#s-NiFi-Architecture)
+
+
+
+## Alternatives to NIFI
+
+
+## Conclusion
+
+## Acknowledgement
+
+
+
+
+Batch vs Live stream (Live)
+ 
+Theory
+Implementation (e.g. Python)
+Benchmark
+A more detailed outline is
+Paper
+Title
+Abstract
+Introductions
+Requirements
+Architecture
+Implementation
+Benchmark
+Conclusions
+Bibliography
+Work breakdown
+
+
+
+
 # WORK SPACE AND NOTES
 
 author, title, published date if can't find it put accessed date, 
