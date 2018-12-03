@@ -1,4 +1,4 @@
-# Apache NiFi Chapter :hand: fa18-523-56
+# Apache NiFi Chapter :smiley: fa18-523-56
 
 | Daniel Hinders
 | dhinders@iu.edu
@@ -546,41 +546,4 @@ Select all processors while holding down the shift key, right click on any of th
 ![nifi_nifi_kafka_finalflow_run](images/nifi_kafka_finalflow_run.PNG){#fig:nifi_kafka_finalflow_run}
 
 Data from the selected rows of the log files are flowing all they way through the NiFi flow to the Kafka cluster.
-
-## 
-
-link to section within paper
-
-[NiFi Architecture](#s-NiFi-Architecture)
-
-
-
-## Alternatives to NIFI
-
-
-## Conclusion
-
-## Acknowledgement
-
-
-
-
-Batch vs Live stream (Live)
- 
-Theory
-Implementation (e.g. Python)
-Benchmark
-A more detailed outline is
-Paper
-Title
-Abstract
-Introductions
-Requirements
-Architecture
-Implementation
-Benchmark
-Conclusions
-Bibliography
-Work breakdown
-
 
