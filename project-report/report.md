@@ -5,7 +5,6 @@
 | Indiana University
 | hid: fa18-523-56
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-report/report.md)
-| code: [:cloud:](https://github.com/cloudmesh-community/fa18-523-56/blob/master/project-code/code)
 
 **:mortar_board: Learning Objectives**
 
@@ -27,22 +26,20 @@ customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This
 flexibility and usability is key to NiFi's value in a big data world
 where stovepipes and inflexibility are frequently challenges.
 
-NiFi is a tool for:
+As pointed out in [@www-fa18-523-56-udemy-nifi] NiFi is a tool for:
 
-* Moving data between systems, including modern systems such as social
-  media sources, AWS cloud server, Hadoop, MongoDB, and so on
-  [@www-fa18-523-56-udemy-nifi]
-* Delivering data to analytics platforms[@www-fa18-523-56-udemy-nifi]
-* Format Conversion, extracting/parsing data[@www-fa18-523-56-udemy-nifi]
-* Data or files routing decisions[@www-fa18-523-56-udemy-nifi]
-* Real-time data streaming[@www-fa18-523-56-udemy-nifi]
+> * Moving data between systems, including modern systems such as social
+>  media sources, AWS cloud server, Hadoop, MongoDB, and so on 
+> * Delivering data to analytics platforms
+> * Format Conversion, extracting/parsing data
+> * Data or files routing decisions
+> * Real-time data streaming
 
+> NiFi is not recommended for:
 
-NiFi is not recommended for:
-
-* Distributed Computation[@www-fa18-523-56-udemy-nifi]
-* Complex Event Processing[@www-fa18-523-56-udemy-nifi]
-* Join/ Aggregated Functions[@www-fa18-523-56-udemy-nifi]
+> * Distributed Computation
+> * Complex Event Processing
+> * Join/ Aggregated Functions
 
 ## NiFi History
  
@@ -223,10 +220,6 @@ processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 
 **1**
 NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
-
-![nifi_download](images/nifi_download.png){#fig:nifi_download}
-
-:o: picture quality bad, convert to ascii, no need for image use text
 
 **2** Unzip the install package.
 
