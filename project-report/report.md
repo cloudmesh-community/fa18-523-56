@@ -104,7 +104,8 @@ as scale-up and scale-down
 
 ## NiFi Architecture
 
-The NiFi homepage +@fig:nifiarchitecture[fa18-523-56-www-nifi-homepagetechdoc] shows the main components in NiFi architecture.
+The NiFi homepage +@fig:nifiarchitecture[fa18-523-56-www-nifi-homepagetechdoc] 
+shows the main components in NiFi architecture.
 
 ![NiFi Architecture [@fa18-523-56-www-nifi-homepagetechdoc]](images/nifi_architecture.PNG){#fig:nifiarchitecture}
 
@@ -220,7 +221,8 @@ processes different dataset(s) [fa18-523-56-www-nifi-homepagetechdoc].
 (Note: Assumes Windows OS and recent verison of Java is installed)
 
 **1**
-NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page]. Select the latest version and the bin.zip option for the Windows instillation.
+NiFi can be downloaded from Apache NiFi homepage[@fa18-523-56-nifi-download-page].
+Select the latest version and the bin.zip option for the Windows instillation.
 
 **2** Unzip the install package.
 
@@ -231,7 +233,8 @@ nifi-1.8.0-bin\nifi-1.8.0\conf
 
 ![nifi_config](images/nifi_config.png){#fig:nifi_config}
 
-Open nifi.properties file with a text editor and edit nifi.web.http.port= to the desired port
+Open nifi.properties file with a text editor and edit nifi.web.http.port= to 
+the desired port
 
 
 ```
@@ -276,8 +279,9 @@ http://localhost:9090/nifi
 
 ## Building a NiFi Flow
 
-**1** Add a TailFile Processor by clicking and draging the processor icon fron the top tray to add a processor.
-Type into the filter "tail" and select the TailFile processor and click ADD
+**1** Add a TailFile Processor by clicking and draging the processor icon fron
+the top tray to add a processor. Type into the filter "tail" and select the 
+TailFile processor and click ADD
 
 ![nifi_processor_tailfile](images/nifi_processor_tailfile.png){#fig:nifi_processor_tailfile}
 
@@ -287,7 +291,8 @@ Type into the filter "tail" and select the TailFile processor and click ADD
 
 Click the properties tab and click the value for the property "File(s) to Tail"
 
-A box will appear to paste the location of the file to tail. For this example I will use a log file for a music player because it will provide a lot of data.
+A box will appear to paste the location of the file to tail. For this example 
+I will use a log file for a music player because it will provide a lot of data.
 
 Use / slash when inputing file path
 
@@ -302,7 +307,9 @@ Click OK and then click APPLY
 
 **3** Add a processor called SplitText
 
-Open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "failure" and "original"
+Open the configuration options for the processor and on the settings tab
+in the options for Automatically Terminate Relationships check the boxes 
+"failure" and "original"
 
 ![nifi_splittext_config2](images/nifi_splittext_config2.PNG){#fig:nifi_splittext_config2}
 
@@ -311,7 +318,7 @@ Open the configuration options for the processor and on the settings tab in the 
 NOTE
 This provides direction if there is a failure at this step if a 
 file can't be split any what to do with the original file after 
-it is split. This flexiablity that NiFi provides requires extra 
+it is split. This flexibility that NiFi provides requires extra 
 configuration choices but provides the NiFi admin extensive 
 control over every aspect of the flow being built.
 ```
@@ -320,13 +327,17 @@ Click the properties tab and change the property Line Split Count to a value of 
 
 ![nifi_splittext_config](images/nifi_splittext_config.PNG){#fig:nifi_splittext_config}
 
-This will split each line of the log file into one row that will be processed independently in the rest of the flow.
+This will split each line of the log file into one row that will be
+processed independently in the rest of the flow.
 
 **4** Add a processor called RouteOnContent 
 
-Open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the box "unmatched" 
+Open the configuration options for the processor and on the settings
+tab in the options for Automatically Terminate Relationships check the
+box "unmatched" 
 
-Click the properties tab and change the property Match Requirement to "content must contain match" click OK
+Click the properties tab and change the property Match Requirement
+to "content must contain match" click OK
 
 Click the + in the upper right corner to add a property. 
 
@@ -343,11 +354,12 @@ when a song plays in the music player
 
 After naming the new property click OK
 
-Click on the value and use the NiFi expression language insert the tags to use to select the rows for processing. 
+Click on the value and use the NiFi expression language insert the
+tags to use to select the rows for processing. 
 
 ```
 NOTE
-The NiFi experssion language can be found on the Apahce NiFi 
+The NiFi expression language can be found on the Apahce NiFi 
 website[@fa18-523-56-www-nifi-expressionlanguageguide].
 ```
 
@@ -362,7 +374,8 @@ We will use these tags for our new properties:
 
 Once all properties have been added click APPLY
 
-**5** Link the processes by hovering over the TailFile processor click on the arrow that appears and drag to connect it to the SplitText Processor
+**5** Link the processes by hovering over the TailFile processor click 
+on the arrow that appears and drag to connect it to the SplitText Processor
 
 ![nifi_flow1](images/nifi_flow1.PNG){#fig:nifi_flow1}
 
@@ -380,27 +393,36 @@ Configure the connection in the column For Relationships, check the box "splits"
 NOTE
 This configuration for this connection will route the rows we selected 
 from the log file that were split out. Another path could be created to 
-handle the orginal files or the failures.
+handle the original files or the failures.
 ```
 **6**
 
-Right click on the RouteOnContent processor to open the configuration options for the processor and on the settings tab in the options for Automatically Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
+Right click on the RouteOnContent processor to open the configuration options
+for the processor and on the settings tab in the options for Automatically
+Terminate Relationships check the boxes "playsong" and "addsong" and click APPLY.
 
 
-The flow is now complete, it will read a log file, select and split inputs into rows based on parameters and routes the selected rows for output. But we have choosen to terminate the output at the RouteOnContent processor so that we run this simple flow first before connecting the flow to an external consumer. 
+The flow is now complete, it will read a log file, select and split inputs into
+rows based on parameters and routes the selected rows for output. But we have chosen
+to terminate the output at the RouteOnContent processor so that we run this simple
+flow first before connecting the flow to an external consumer. 
 
 ![nifi_flow3](images/nifi_flow3.PNG){#fig:nifi_flow3}
 
-Select all five components in the flow with the shift key held down, then right-click on any component and select Create template.
+Select all five components in the flow with the shift key held down, then right-click
+on any component and select Create template.
 
 Type a name for the template and click CREATE.
 
-Click and drag the Template icon fron the top tray to add to the workspace and a diologe box will ask what template to add and you can select the template that was just saved. 
+Click and drag the Template icon from the top tray to add to the workspace and a
+dialog box will ask what template to add and you can select the template that was just saved. 
 
 
-**7** To run our completed flow we need to turn on individual components or start then all at once. 
+**7** To run our completed flow we need to turn on individual components or 
+start then all at once. 
 
-Select all components with the shift key held down and click on the play button on the operate panel on the left side of the workspace.
+Select all components with the shift key held down and click on the play button on
+the operate panel on the left side of the workspace.
 
 ![nifi_operate](images/nifi_operate.PNG){#fig:nifi_operate}
 
@@ -412,22 +434,26 @@ There is will statistics on each processor for data flowing through the flow.
 
 ## Linking NiFi Flow to Apache Kafka
 
-NiFi provides numerous endpoint processors pass data out of the NiFi flow to a new host. One example is Apache Kafka, these directions for setting up Kafka are for Windows.
+NiFi provides numerous endpoint processors pass data out of the NiFi flow to a new host. 
+One example is Apache Kafka, these directions for setting up Kafka are for Windows.
 
-**1** Start setting up Apache Kafka by download the lastest version of Kafka from the Apache Kafka website. The download will include Apache ZooKeeper. 
+**1** Start setting up Apache Kafka by download the latest version of Kafka from the 
+Apache Kafka website. The download will include Apache ZooKeeper. 
 
 **2** Configure Zookeeper and Kafka by navigating to the configuration directory:
 
 ```
 kafka_2.11-2.0.1\kafka_2.11-2.0.1\config
 ```
-Open zookeeper.properties file with a text editor and edit clientPort= to the desired port and the dataDir= to the desired folder for logs
+Open zookeeper.properties file with a text editor and edit clientPort= to the desired 
+port and the dataDir= to the desired folder for logs
 
 ```
 clientPort=2181
 clientPortAddress=localhost
 ```
-Open server.properties file with a text editor and edit zookeeper.connect= to the port selected for zookeeper and the dataDir= to the desired folder for logs
+Open server.properties file with a text editor and edit zookeeper.connect= to the
+port selected for zookeeper and the dataDir= to the desired folder for logs
 
 ```
 zookeeper.connect=localhost:2181
@@ -459,7 +485,8 @@ Hit enter and the Kafka server will start up
 
 ![nifi_kafka_startup](images/nifi_kafka_startup.PNG){#fig:nifi_kafka_startup}
 
-**5** Create two Kafka topics to so that we can put files data from the NiFi flow into the Kafka topics
+**5** Create two Kafka topics to so that we can put files data from the NiFi 
+flow into the Kafka topics
 
 To add the addsong topic open a new cmd prompt and set directory to
 ```
@@ -483,39 +510,48 @@ kafka-tpocs.bat --create --zookeeper localhost:2181 --replication-factor 1 --par
 
 **6** Add NiFi Processors to push data from the NiFi flow to Kafka
 
-Select all three processors with the shift key held down and click on the stop button on the operate panel on the left side of the workspace.
+Select all three processors with the shift key held down and click on the stop
+button on the operate panel on the left side of the workspace.
 
 ![nifi_operate](images/nifi_operate.PNG){#fig:nifi_operate}
 
-Add a PublishKafka processors to the flow. On the settings tab check the success check box.
-On the properties tab provide the port for the Kafka Broker.
+Add a PublishKafka processors to the flow. On the settings tab check the success 
+check box. On the properties tab provide the port for the Kafka Broker.
 
 ```
 localhost:2181
 ```
 On the properties tab provide the Topic Name: addsong
 
-Repeat this process by adding another PublishKakfa processor and configure it the same except set the Topic Name: playsong
+Repeat this process by adding another PublishKakfa processor and configure it the
+same except set the Topic Name: playsong
 
 
 ![nifi_publish_kafka_config](images/nifi_publish_kafka_config.PNG){#fig:nifi_publish_kafka_config}
 
-**6** Configure the RouteOnContent processor, on the settings tab in the options for Automatically Terminate Relationships uncheck the boxes "playsong" and "addsong" and click APPLY.
+**6** Configure the RouteOnContent processor, on the settings tab in the options
+for Automatically Terminate Relationships uncheck the boxes "playsong" and "addsong"
+and click APPLY.
 
 ![nifi_routeoncontent_config_kafka](images/nifi_routeoncontent_config_kafka.PNG){#fig:nifi_routeoncontent_config_kafka}
 
 
 
-**7** Link the RouteOnContent processsor and a PublishKafka processor by hovering over the RouteOnContent process and click on the arrow that appears and drag to connect it to the PublishKafka Processor
+**7** Link the RouteOnContent processsor and a PublishKafka processor by hovering 
+over the RouteOnContent process and click on the arrow that appears and drag to connect 
+it to the PublishKafka Processor
 
-The Create Connection settings will appear, For Relationships, check the approporate topic being used by the PublishKafka processor that is linked, addsong, or playsong. Repeat the link from the RouteOnContent processor and the other PublishKafka processor and check the correct relationship.
+The Create Connection settings will appear, For Relationships, check the approporate 
+topic being used by the PublishKafka processor that is linked, addsong, or playsong.
+Repeat the link from the RouteOnContent processor and the other PublishKafka processor 
+and check the correct relationship.
 
 
 ![nifi_kafka_linked](images/nifi_kafka_linked.PNG){#fig:nifi_kafka_linked}
 
 ```
 NOTE
-Hover over the yellow exclimation point on one of the PublishKafka processors. 
+Hover over the yellow exclamation point on one of the PublishKafka processors. 
 The error will say "'Relationship failure' is invalid because Relationship 
 'failure' is not connected to any component and is not auto-terminated" This 
 is a good example of the robust validation in NiFi to ensure flows have the
@@ -523,7 +559,9 @@ proper fail-over properties in place.
 ```
 ![nifi_kafka_error](images/nifi_kafka_error.PNG){#fig:nifi_kafka_error}
 
-**8** To create a pathway for any data that fails in the PublishKafka processors hover hovering over the PublishKafka processor and click on the arrow that appears and drag to connect it with itself.
+**8** To create a pathway for any data that fails in the PublishKafka processors hover
+hovering over the PublishKafka processor and click on the arrow that appears and drag to 
+connect it with itself.
 
 The Create Connection settings will appear, For Relationships, check the failure box.
 
@@ -536,14 +574,16 @@ The flow is ready to run.
 ![nifi_nifi_kafka_finalflow_notrun](images/nifi_kafka_finalflow_notrun.PNG){#fig:nifi_kafka_finalflow_notrun}
 
 
-Select all processors while holding down the shift key, right click on any of the processors and click start.
+Select all processors while holding down the shift key, right click on
+any of the processors and click start.
 
 ![nifi_nifi_kafka_finalflow_run](images/nifi_kafka_finalflow_run.PNG){#fig:nifi_kafka_finalflow_run}
 
-Data from the selected rows of the log files are flowing all they way through the NiFi flow to the Kafka cluster.
+Data from the selected rows of the log files are flowing all they way
+through the NiFi flow to the Kafka cluster.
 
 ## Conclusion
 
 NiFi is extensible tool that is felxible enough to solve many big data challanges. 
 With the easy to use drag and drop user interface and configurable options it is a great
-tool for even non-programs to tackle a big data challange.
+tool for even non-programs to tackle a big data challenge.
