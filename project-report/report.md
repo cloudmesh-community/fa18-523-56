@@ -585,5 +585,5 @@ through the NiFi flow to the Kafka cluster.
 ## Conclusion
 
 NiFi is extensible tool that is felxible enough to solve many big data challanges. 
-With the easy to use drag and drop user interface and configurable options it is a great
+With the easy to use drag-and-drop user interface and configurable options it is a great
 tool for even non-programs to tackle a big data challenge.
