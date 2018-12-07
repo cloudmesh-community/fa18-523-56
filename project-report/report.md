@@ -8,8 +8,9 @@
 
 **:mortar_board: Learning Objectives**
 
-* Learn about NIFI
-* Install NIFI and setup a data stream with various processors
+* Learn about NiFi
+* Install NiFi and setup a data stream with various processors
+* Integrate NiFi with Kafka
 
 ---
 
