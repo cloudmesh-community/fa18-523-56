@@ -531,7 +531,8 @@ The Create Connection settings will appear, For Relationships, check the failure
 
 Repeat for the other PublishKafka processor.
 
-The flow is ready to run. 
+The flow is ready to run.
+
 ![nifi_nifi_kafka_finalflow_notrun](images/nifi_kafka_finalflow_notrun.PNG){#fig:nifi_kafka_finalflow_notrun}
 
 
