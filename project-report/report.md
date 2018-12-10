@@ -23,7 +23,7 @@ preserving data provenance and security
 [@fa18-523-56-www-nifi-nifihomepage]. NiFi provides the ability to
 build or alter an ETL flow with a few clicks. NiFi builds Gets,
 Converts, and Pulls in a GUI and allows the user to build and
-customize the flow [@fa18-523-56- www-nifi-issartetlsimple]. This
+customize the flow [@fa18-523-56-www-nifi-issartetlsimple]. This
 flexibility and usability is key to NiFi's value in a big data world
 where stovepipes and inflexibility are frequently challenges.
 
