@@ -58,7 +58,7 @@
 
 * Working on paper - Apache NIFI
 * Working on project
-
+* fixed bugs with bibtex
 
 ### Week Fri 10/27/18 - 11/02/18
 
@@ -67,6 +67,20 @@
 
 ### Week Fri 11/03/18 - 11/09/18
 * work on paper
+* work on project
+
+### Week Fri 11/10/18 - 11/16/18
+* work on project
+
+### Week Fri 11/17/18 - 11/23/18
+* work on project
+
+### Week Fri 11/24/18 - 11/30/18
+* work on project
+
+### Week Fri 12/01/18 - 12/07/18
+* work on project
+* fixed bugs with bibtex
 
 # notes from paper
  * :o: start your section with what NiFi is, (11/7 Dan - moved things around to do this...might add more on intro section?)
