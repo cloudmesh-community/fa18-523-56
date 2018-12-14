@@ -1,4 +1,4 @@
-# Apache NiFi Chapter :smiley: fa18-523-56
+# Apache NiFi
 
 | Daniel Hinders
 | dhinders@iu.edu
